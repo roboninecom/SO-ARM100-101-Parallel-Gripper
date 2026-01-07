@@ -134,7 +134,7 @@ The gripper supports multiple cameras via interchangeable camera holder:
 
 ### 1. Print the Parts (2-4 hours)
 
-Download STL files from [`models/parts/`](models/):
+Download STL files from [`models/parts/`](models/). Compatible with popular printers like **Bambu Lab A1 mini**, **Prusa MINI+**, and any printer with ≥180×180mm bed.
 
 | Part | Qty | Settings |
 |------|:---:|----------|
@@ -190,8 +190,8 @@ python software/python/gripper_control.py
 │   ├── quick-start.md         # Getting started guide
 │   └── specifications.md      # Technical specifications
 ├── models/
-│   ├── parts/                 # Individual STL files
-│   └── Follower gripper.STL   # Complete assembly preview
+│   ├── parts/                              # Individual STL files
+│   └── Follower_Gripper_180x180_BedSize.STL  # Complete assembly (180×180mm bed)
 ├── software/
 │   └── python/                # Control software
 └── examples/                  # Usage examples

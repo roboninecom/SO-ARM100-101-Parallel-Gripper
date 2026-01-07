@@ -2,11 +2,21 @@
 
 This folder contains STL files for the Follower Gripper assembly.
 
-## Complete Assembly
+## Complete Assembly (Preview)
 
-| File | Description |
-|------|-------------|
-| `Follower gripper (table 180x180).STL` | Complete gripper assembly for preview (180×180mm print bed) |
+| File | Description | Compatible Printers |
+|------|-------------|---------------------|
+| `Follower_Gripper_180x180_BedSize.STL` | Complete gripper assembly | Printers with 180×180mm+ bed |
+
+### Compatible 3D Printers (180×180mm bed size)
+
+- **Bambu Lab A1 mini** (180×180×180mm)
+- **Prusa MINI / MINI+** (180×180×180mm)
+- **Creality Ender-2 Pro** (165×165×180mm - partial fit)
+- **Anycubic Kobra Neo** (220×220×250mm)
+- **Artillery Genius** (220×220×250mm)
+
+*Note: Any printer with bed size ≥180×180mm can print the complete assembly preview.*
 
 ## Individual Parts
 
@@ -35,4 +45,4 @@ Located in the `parts/` folder:
 - Print gears with higher infill (30%) for better strength
 - Main frame may require supports depending on orientation
 - Post-processing: light sanding may be needed for bearing fits
-
+- Individual parts can be printed on any standard FDM printer (bed size ≥120×120mm)

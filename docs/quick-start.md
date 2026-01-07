@@ -30,6 +30,12 @@ Get your Follower Gripper for SO-ARM101 up and running!
    - Material: PLA or PETG
 3. Remove supports and test-fit bearings
 
+**Compatible 3D Printers** (180×180mm+ bed):
+- Bambu Lab A1 mini
+- Prusa MINI / MINI+
+- Anycubic Kobra Neo
+- Any printer with bed ≥180×180mm
+
 **Parts to print:**
 - 1x Main frame (RB9.01.060.015)
 - 2x Clamp (RB9.01.060.021)
