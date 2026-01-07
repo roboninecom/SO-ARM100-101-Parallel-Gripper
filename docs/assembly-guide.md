@@ -132,11 +132,29 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ---
 
+## Step 9: Gripper Holder Attachment
+
+![Gripper holder attachment](../assets/images/assembly/09-gripper-holder-attachment.png)
+
+**Components needed:**
+- 1x Camera holder (RB9.01.060.073) or Servo plate (RB9.01.060.080)
+- 1x Parallel Gripper SO-ARM101
+- 4x M3x6 Screws (from servo kit)
+- 4x Self-tapping screws (from servo kit)
+
+**Instructions:**
+1. Depending on what type of Gripper you want to connect, attach Camera holder or Servo plate to the Wrist Joint horn and fix with 4x M3x6 screws
+2. Attach the Parallel Gripper to the Camera holder or Servo plate and fix with 4x self-tapping screws
+3. Connect cable from the Parallel Gripper to servo №5
+
+---
+
 ## Assembly Complete!
 
-Congratulations! Your Follower Gripper is now assembled and ready for use.
+![Assembled SO-ARM101 with Follower Gripper](../assets/images/specification/07-gripper-on-so-arm100.jpg)
+
+Congratulations! Your SO-ARM101 is now assembled and ready for use.
 
 ### Next Steps
-- Connect the servo to the Bus Servo Adapter Board
 - Configure servo parameters using the Feetech software
-- Test gripper operation before mounting on robot arm
+- Test gripper operation before use
