@@ -11,7 +11,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 1: Install Linear Bearings in Clamps
 
-![Clamp with linear bearings](../assets/images/01-clamp-with-linear-bearings.png)
+![Clamp with linear bearings](../assets/images/assembly/01-clamp-with-linear-bearings.png)
 
 **Components needed:**
 - 2x Clamps (RB9.01.060.021)
@@ -27,7 +27,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 2: Install Gear on Servo
 
-![Servo with gear assembly](../assets/images/02-servo-with-gear-assembly.png)
+![Servo with gear assembly](../assets/images/assembly/02-servo-with-gear-assembly.png)
 
 **Components needed:**
 - 1x Feetech STS3250 Servo
@@ -45,7 +45,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 3: Mount Servo on Main Frame
 
-![Servo mounted on main frame](../assets/images/03-servo-mounted-on-main-frame.png)
+![Servo mounted on main frame](../assets/images/assembly/03-servo-mounted-on-main-frame.png)
 
 **Components needed:**
 - 1x Main Frame (RB9.01.060.015)
@@ -60,7 +60,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 4: Install Bearings on Main Frame
 
-![Bearings installed on main frame](../assets/images/04-bearings-installed-on-main-frame.png)
+![Bearings installed on main frame](../assets/images/assembly/04-bearings-installed-on-main-frame.png)
 
 **Components needed:**
 - 2x MR106ZZ Bearings (6x10x3 mm)
@@ -74,9 +74,9 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 5: Install Rods and Clamps
 
-![Rods and clamps installed](../assets/images/05-rods-and-clamps-installed.png)
+![Rods and clamps installed](../assets/images/assembly/05-rods-and-clamps-installed.png)
 
-![Rods and clamps front view](../assets/images/05b-rods-and-clamps-front-view.png)
+![Rods and clamps front view](../assets/images/assembly/05b-rods-and-clamps-front-view.png)
 
 **Components needed:**
 - 2x Stainless Steel Rods (6mm diameter, 125mm length)
@@ -94,7 +94,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 6: Attach Gear Racks
 
-![Gear racks top view](../assets/images/06-gear-racks-top-view.png)
+![Gear racks top view](../assets/images/assembly/06-gear-racks-top-view.png)
 
 **Components needed:**
 - 2x Gear Racks (RB9.01.060.030)
@@ -110,7 +110,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 7: Insert Servo Cable
 
-![Servo cable installed](../assets/images/07-servo-cable-installed.png)
+![Servo cable installed](../assets/images/assembly/07-servo-cable-installed.png)
 
 **Components needed:**
 - Servo cable (from servo kit)
@@ -122,7 +122,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ## Step 8: Insert Screws for Rigidity
 
-![Final assembly with rigidity screws](../assets/images/08-final-assembly-with-rigidity-screws.png)
+![Final assembly with rigidity screws](../assets/images/assembly/08-final-assembly-with-rigidity-screws.png)
 
 **Components needed:**
 - 4x M3x50 DIN 912 screws
