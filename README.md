@@ -1,10 +1,18 @@
-# 3D-Printed Parallel Gripper / SO-ARM 100
-
-A precision parallel gripper designed by [Robonine](https://robonine.com) for robotics applications, featuring 3D-printed components and professional servo control using Feetech STS3215 servos.
-
----
+# SO-ARM100/101 Parallel Gripper
 
 <div align="center">
+
+[![SO-ARM101 Parallel Gripper](assets/images/SO%20ARM%20101%20Parallel%20Gripper%20Live.png)](https://youtube.com/shorts/eL2W2aHTV8M)
+
+**🎥 [Watch the gripper in action!](https://youtube.com/shorts/eL2W2aHTV8M)**
+
+A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robonine.com)** for the open-source SO-ARM100/101 robotic platform.
+
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
+[![Cost: ~$76](https://img.shields.io/badge/Cost-~%2476-green.svg)](docs/bom-amazon.md)
+[![Assembly: 30min](https://img.shields.io/badge/Assembly-30%20min-orange.svg)](docs/assembly-guide.md)
+
+---
 
 **Questions? We're here to help!**  
 📩 Email: [hello@robonine.com](mailto:hello@robonine.com)
@@ -13,156 +21,244 @@ A precision parallel gripper designed by [Robonine](https://robonine.com) for ro
 
 ---
 
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎯 **500N Gripping Force** | Powerful parallel jaw mechanism |
+| ⚡ **60 mm/s Speed** | Fast gripper operation |
+| 📏 **100.5mm Full Stroke** | Wide opening for various objects |
+| 🎯 **±0.05mm Repeatability** | High precision positioning |
+| 📷 **Camera Compatible** | Supports RealSense, Orbbec, USB cameras |
+| 🖨️ **3D Printable** | All parts print on standard FDM printers |
+| 💰 **~$76 Total Cost** | Affordable open-source solution |
+| ⚙️ **Easy Assembly** | 30-45 minutes with basic tools |
+
+---
+
 ## 📸 Gallery
 
 <div align="center">
 
-### Assembled Gripper
-![Assembled Parallel Gripper](assets/images/parallel_gripper_assembled.jpg)
-*Real-world implementation of the gripper*
+### Gripper on SO-ARM100
 
-### 3D CAD Design
-![3D CAD Model](assets/images/parallel_gripper_3d.png)
-*3D CAD design showing internal mechanism*
+![Gripper mounted on SO-ARM100](assets/images/specification/07-gripper-on-so-arm100.jpg)
 
-### 🎥 See It in Action
-[![Gripper Demo Video](https://img.shields.io/badge/▶️_Watch_Demo-YouTube-red?style=for-the-badge)](https://youtube.com/shorts/Ss4TbO_psto?si=v6VbK91Q2vyNlbNd)
+*Follower gripper integrated with SO-ARM100 robot arm*
 
-*Click above to see the parallel gripper working with precise control and smooth operation*
+### Dimensions
+
+| Closed | Open |
+|--------|------|
+| ![Closed gripper](assets/images/specification/01-closed-gripper-dimensions.jpg) | ![Open gripper](assets/images/specification/02-open-gripper-dimensions.jpg) |
+| Height: 108.4mm, Length: 123.5mm | Full stroke: 100.5mm |
 
 </div>
 
-## 💰 Total Project Cost
-
-**Complete Build Cost: $69.45-74.45** *(Amazon pricing)*
-
-| Category | Cost (USD) |
-|----------|------------|
-| Electronic Components | $39.98 |
-| Mechanical Components | $22.87 |
-| 3D Printing Materials | $5-10 |
-| Fasteners | $1.60 |
-| **Total** | **$69.45-74.45** |
-
-*All components available on Amazon with direct purchase links in [Bill of Materials](docs/bom-amazon.md)*
-
-## 🎯 Project Overview
-
-This project provides a complete open-source solution for a parallel gripper that can be integrated with robotic arms. The gripper features:
-
-- **Precision Control**: Servo-driven parallel jaw mechanism with real-time feedback
-- **Professional Design**: Industrial-grade part numbering and assembly procedures
-- **Cost-Effective**: 3D-printed components with readily available hardware
-- **Versatile Integration**: Compatible with various robotics platforms
-
-## 🔧 Key Features
-
-- **Parallel Jaw Movement**: Ensures consistent grip on objects of various sizes
-- **Real-time Monitoring**: Current, voltage, temperature, and load feedback
-- **Precise Positioning**: Degree-based control with position feedback (±0.1°)
-- **Robust Construction**: Linear bearings for smooth, reliable operation
-- **Professional Design**: CAD design with industrial-grade components
-- **Servo Control**: High-torque Feetech STS3215 with bus communication
-- **3D Printable**: All mechanical parts designed for standard FDM printers
-- **Open Source**: Complete documentation, code, and CAD files included
+---
 
 ## 📋 Specifications
 
-- **Servo**: Feetech STS3215 (compatible with Waveshare variants)
-- **Communication**: Serial (RS485/TTL, up to 1Mbps)
-- **Power**: 6-12V DC
-- **Jaw Travel**: Configurable based on gear ratio
-- **Materials**: PLA/PETG 3D printed parts, steel rods, precision bearings
-- **Positioning Accuracy**: ±0.1° (4096 steps/360°)
-- **Force**: Up to 15kg·cm servo torque
-- **Response Time**: <100ms for small movements
+### Performance
 
-## 🎯 Performance Highlights
+| Parameter | Value |
+|-----------|-------|
+| Maximum gripping force | **500 N** |
+| Maximum gripping speed | **60 mm/s** |
+| Full stroke | **100.5 mm** |
+| Repeatability | **±0.05 mm** |
+| Assembly mass (PLA, 30% infill) | **200 g** |
+| DOF | **1** |
 
-✅ **Smooth Operation** - Linear bearings ensure frictionless movement  
-✅ **Precise Control** - Degree-based positioning with real-time feedback  
-✅ **Reliable Gripping** - Parallel jaws maintain consistent contact  
-✅ **Professional Integration** - Bus communication for robotics systems  
-✅ **Proven Design** - Tested and demonstrated in real applications
+### Dimensions
 
-## 🛠️ Hardware Requirements
+| Dimension | Value |
+|-----------|-------|
+| Length (closed) | 123.5 mm |
+| Height | 108.4 mm |
+| Frame width | 102 mm |
+| Jaw height | 21.4 mm |
+| Jaw thickness | 8.5 mm |
 
-### Electronic Components
-- 1x Feetech STS3215-C018 Servo Motor or Waveshare STS3215
-- 1x Bus Servo Adapter Board (Waveshare or compatible)
+### Servo Motor (Feetech STS3215)
 
-### Mechanical Components
-- 2x MR106ZZ Bearings (10x6x3 mm)
-- 4x LM6UU Linear Bearings (12x6x19 mm)
-- 2x Stainless Steel Rods (6mm diameter, 150mm length)
+| Parameter | Value |
+|-----------|-------|
+| Operating Voltage | 4-14V |
+| Stall torque | 30 kg·cm |
+| Speed (no load) | 45 RPM |
+| Encoder | Absolute magnetic 12-bit |
+| Protocol | RS485/TTL up to 1 Mbps |
+| Operating temperature | -20°C ~ 60°C |
 
-### 3D-Printed Parts
-- 1x Main Frame (RB9.01.060.010)
-- 2x Clamps (RB9.01.060.020)
-- 2x Gear Racks (RB9.01.060.030)
-- 1x Drive Gear (RB9.01.060.040)
+---
 
-### Fasteners
-- 4x M3x10 DIN 7991 screws
-- 4x M3x20 DIN 7991 screws
-- 2x M4x8 DIN 7991 screws
-- 4x M3 DIN 934 nuts
-- 4x Self-tapping screws (included with servo)
+## 📷 Camera Compatibility
+
+The gripper supports multiple cameras via interchangeable camera holder:
+
+| Camera | Type | Use Case |
+|--------|------|----------|
+| IMX335 5MP USB | RGB | Basic vision tasks |
+| GC2093 2MP USB | RGB | Budget option |
+| Orbbec Gemini 2 | RGB-D | 3D perception |
+| RealSense D405 | RGB-D | Close-range depth |
+| RealSense D435/D435i | RGB-D | General purpose |
+| RealSense D455 | RGB-D | Long-range depth |
+
+<div align="center">
+
+| IMX335 | Orbbec Gemini 2 | RealSense D405 |
+|--------|-----------------|----------------|
+| ![IMX335](assets/images/specification/04-camera-imx335-5mp.jpg) | ![Orbbec](assets/images/specification/05-camera-orbbec-gemini2.jpg) | ![RealSense](assets/images/specification/06-camera-realsense-d405.jpg) |
+
+</div>
+
+---
+
+## 💰 Bill of Materials
+
+**Total Cost: ~$76** ([Full BOM with Amazon links](docs/bom-amazon.md))
+
+| Category | Components | Est. Cost |
+|----------|------------|-----------|
+| Electronics | Feetech STS3215 servo + Bus Adapter | ~$40 |
+| Bearings | MR106ZZ (2) + LM6UU (4) | ~$6 |
+| Rods | D6×125mm (2) + D6×150mm (2) + M3×150mm (2) | ~$10 |
+| 3D Printing | 5 parts (~200-300g PLA) | ~$17 |
+| Fasteners | M3/M4 screws, nuts, set screws | ~$3 |
+
+---
 
 ## 🚀 Quick Start
 
-1. **Print the Parts**: Use the STL files in `/hardware/3d-models/`
-2. **Gather Components**: Order parts from the [Bill of Materials](docs/bom.md)
-3. **Assembly**: Follow the [Assembly Guide](docs/assembly-guide.md)
-4. **Software Setup**: 
-   - Download and install the STServo SDK:
-     - Download [STServo Python SDK](https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/STServo_Python.zip)
-     - Extract the ZIP file and copy the `STservo_sdk` folder to `software/python/` directory
-   - Install Python dependencies and run the control software:
+### 1. Print the Parts (2-4 hours)
+
+Download STL files from [`models/parts/`](models/):
+
+| Part | Qty | Settings |
+|------|:---:|----------|
+| Main frame (RB9.01.060.015) | 1 | 20% infill |
+| Clamp (RB9.01.060.021) | 2 | 20% infill |
+| Gear rack (RB9.01.060.030) | 2 | 30% infill |
+| Gear (RB9.01.060.041) | 1 | 30% infill |
+| Camera holder (RB9.01.060.073) | 1 | 20% infill |
+
+### 2. Order Components (1-2 days)
+
+See [Bill of Materials](docs/bom-amazon.md) for direct Amazon links.
+
+### 3. Assemble (30-45 minutes)
+
+Follow the [Assembly Guide](docs/assembly-guide.md) with step-by-step images:
+
+1. Install linear bearings in clamps
+2. Mount gear to servo
+3. Attach servo to main frame
+4. Install MR106ZZ bearings
+5. Add rods and clamps
+6. Attach gear racks
+7. Insert servo cable
+8. Add rigidity screws
+9. Mount to robot arm (optional)
+
+### 4. Software Setup
 
 ```bash
-pip install -r software/python/requirements.txt
+# Install STServo SDK
+git clone https://github.com/FEETECH-RC/STServo_SDK_Python.git
+
+# Install dependencies
+pip install pyserial
+
+# Run gripper control
 python software/python/gripper_control.py
 ```
+
+---
 
 ## 📁 Repository Structure
 
 ```
-├── docs/                    # Documentation
-│   ├── assembly-guide.md   # Step-by-step assembly
-│   ├── bom.md             # Bill of materials
-│   └── specifications.md   # Technical specifications
-├── hardware/
-│   └── 3d-models/         # STL files for 3D printing
+├── assets/
+│   └── images/
+│       ├── assembly/          # Assembly step images
+│       └── specification/     # Technical drawings
+├── docs/
+│   ├── assembly-guide.md      # Step-by-step assembly
+│   ├── bom-amazon.md          # Bill of materials with links
+│   ├── quick-start.md         # Getting started guide
+│   └── specifications.md      # Technical specifications
+├── models/
+│   ├── parts/                 # Individual STL files
+│   └── Follower gripper.STL   # Complete assembly preview
 ├── software/
-│   └── python/            # Control software
-└── examples/              # Usage examples
+│   └── python/                # Control software
+└── examples/                  # Usage examples
 ```
+
+---
+
+## 📖 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Quick Start Guide](docs/quick-start.md) | Get running in 30 minutes |
+| [Assembly Guide](docs/assembly-guide.md) | Step-by-step with images |
+| [Bill of Materials](docs/bom-amazon.md) | Parts list with Amazon links |
+| [Specifications](docs/specifications.md) | Technical details |
+| [3D Models](models/README.md) | Print settings and files |
+
+---
+
+## 🔧 Hardware Requirements
+
+### Electronics
+- 1× Feetech STS3215 Servo Motor
+- 1× Bus Servo Adapter Board (Waveshare)
+
+### Mechanical
+- 2× MR106ZZ Bearings (6×10×3 mm)
+- 4× LM6UU Linear Bearings (6×12×19 mm)
+- 2× Steel Rods D6×125 mm
+- 2× Steel Rods D6×150 mm
+- 2× Threaded Rods M3×150 mm
+
+### Fasteners
+- 8× M3×8 DIN 7991 screws
+- 4× M3×20 DIN 7991 screws
+- 4× M3×50 DIN 912 screws
+- 2× M4×6 DIN 7991 screws
+- 4× M3 DIN 934 nuts
+- 4× M3×4 DIN 913 set screws
+
+### Tools Required
+- Phillips head screwdriver
+- Hex keys M3 and M4
+
+---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our contributing guidelines for:
-- Bug reports and feature requests
-- Code contributions
-- Documentation improvements
-- Hardware modifications
+We welcome contributions! Please feel free to:
+- 🐛 Report bugs and issues
+- 💡 Suggest new features
+- 🔧 Submit pull requests
+- 📖 Improve documentation
+
+---
 
 ## 📄 License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🔗 Links
 
 - [Feetech STS3215 Servo](https://www.feetechrc.com/525603.html)
 - [Waveshare Bus Servo Adapter](https://www.waveshare.com/bus-servo-adapter-a.htm)
-- [Project Documentation](docs/)
-
-## 📞 Support
-
-For questions and support:
-- Open an issue on GitHub
-- Check the documentation in `/docs/`
-- Review the examples in `/examples/`
+- [STServo Python SDK](https://github.com/FEETECH-RC/STServo_SDK_Python)
 
 ---
 
