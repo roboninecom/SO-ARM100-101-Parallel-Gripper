@@ -4,7 +4,7 @@
 
 | Article | Description | Qty | Price | Link |
 |---------|-------------|:---:|-------|------|
-| ST-3250-C001 | Feetech Servo Motor | 1 | ~$45.00 | [Feetech](https://www.feetechrc.com/562636.html) |
+| ST-3215-C018 | Feetech Servo Motor | 1 | ~$29.00 | [Feetech](https://www.feetechrc.com/525603.html) |
 | | Bus Servo Adapter Board | 1 | ~$10.99 | [Waveshare](https://www.waveshare.com/bus-servo-adapter-a.htm) |
 
 ## Bearings
@@ -53,23 +53,23 @@
 
 | Category | Items | Est. Cost |
 |----------|-------|-----------|
-| Electronics | Servo ST-3250 + Adapter | ~$56.00 |
+| Electronics | Servo ST-3215 + Adapter | ~$40.00 |
 | Bearings | MR106ZZ (2) + LM6UU (4) | ~$6.00* |
 | Rods | D6x125 (2) + D6x150 (2) + M3x150 (2) | ~$10.00* |
 | 3D-Printed Parts | 5 parts | ~$17.00 |
 | Fasteners | Various screws & nuts | ~$3.00* |
-| **Total** | | **~$92.00** |
+| **Total** | | **~$76.00** |
 
 ### Full Pack Prices (with extras)
 
 | Category | Pack Price |
 |----------|------------|
-| Electronics | ~$56.00 |
+| Electronics | ~$40.00 |
 | Bearings | ~$14.48 |
 | Rods | ~$24.97 |
 | 3D-Printed Parts | ~$17.00 |
 | Fasteners | ~$42.44 |
-| **Total** | **~$155.00** |
+| **Total** | **~$139.00** |
 
 *\* Pro-rated from bulk pack prices*
 
