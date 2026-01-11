@@ -25,14 +25,14 @@ A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robon
 
 | Feature | Description |
 |---------|-------------|
-| 🎯 **500N Gripping Force** | Powerful parallel jaw mechanism |
-| ⚡ **60 mm/s Speed** | Fast gripper operation |
-| 📏 **100.5mm Full Stroke** | Wide opening for various objects |
-| 🎯 **±0.05mm Repeatability** | High precision positioning |
-| 📷 **Camera Compatible** | Supports RealSense, Orbbec, USB cameras |
-| 🖨️ **3D Printable** | All parts print on standard FDM printers |
-| 💰 **~$76 Total Cost** | Affordable open-source solution |
-| ⚙️ **Easy Assembly** | 30-45 minutes with basic tools |
+| **500N Gripping Force** | Powerful parallel jaw mechanism |
+| **60 mm/s Speed** | Fast gripper operation |
+| **100.5mm Full Stroke** | Wide opening for various objects |
+| **±0.05mm Repeatability** | High precision positioning |
+| **Camera Compatible** | Supports RealSense, Orbbec, USB cameras |
+| **3D Printable** | All parts print on standard FDM printers |
+| **~$76 Total Cost** | Affordable open-source solution |
+| **Easy Assembly** | 30-45 minutes with basic tools |
 
 ---
 
