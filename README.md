@@ -262,6 +262,15 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 
 ---
 
+## 👥 Engineering Team
+
+| Name | Role | Contact |
+|------|------|---------|
+| **Boris Kotov** | Software Engineer | [Telegram](https://t.me/bkotov) |
+| **Alan Subin** | Design Engineer | [LinkedIn](https://www.linkedin.com/in/alan-subin/) |
+
+---
+
 <div align="center">
 
 **Built for the robotics community by [Robonine](https://robonine.com)** 🤖
