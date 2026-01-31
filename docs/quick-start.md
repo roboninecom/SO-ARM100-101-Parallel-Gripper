@@ -10,7 +10,7 @@ Get your Follower Gripper for SO-ARM101 up and running!
 
 ### Hardware
 - [ ] All 3D printed parts (see [3D Models](../models/))
-- [ ] Electronic components (see [BOM](bom-amazon.md))
+- [ ] Electronic components (see [BOM](bom.md))
 - [ ] Mechanical components (bearings, rods, fasteners)
 - [ ] Tools: Phillips screwdriver, Hex keys M3 and M4
 
@@ -47,7 +47,7 @@ Get your Follower Gripper for SO-ARM101 up and running!
 
 ## Step 2: Gather Components (1-2 days shipping)
 
-Order parts from the [Bill of Materials](bom-amazon.md):
+Order parts from the [Bill of Materials](bom.md):
 
 | Component | Qty | Est. Cost |
 |-----------|:---:|-----------|

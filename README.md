@@ -9,7 +9,7 @@
 A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robonine.com)** for the open-source SO-ARM100/101 robotic platform.
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
-[![Cost: ~$76](https://img.shields.io/badge/Cost-~%2476-green.svg)](docs/bom-amazon.md)
+[![Cost: ~$76](https://img.shields.io/badge/Cost-~%2476-green.svg)](docs/bom.md)
 [![Assembly: 30min](https://img.shields.io/badge/Assembly-30%20min-orange.svg)](docs/assembly-guide.md)
 
 ---
@@ -118,7 +118,7 @@ The gripper supports multiple cameras via interchangeable camera holder:
 
 ## 💰 Bill of Materials
 
-**Total Cost: ~$76** ([Full BOM with Amazon links](docs/bom-amazon.md))
+**Total Cost: ~$76** ([Full BOM with Amazon links](docs/bom.md))
 
 | Category | Components | Est. Cost |
 |----------|------------|-----------|
@@ -146,7 +146,7 @@ Download STL files from [`models/parts/`](models/). Compatible with popular prin
 
 ### 2. Order Components (1-2 days)
 
-See [Bill of Materials](docs/bom-amazon.md) for direct Amazon links.
+See [Bill of Materials](docs/bom.md) for direct Amazon links.
 
 ### 3. Assemble (30-45 minutes)
 
@@ -186,7 +186,7 @@ python software/python/gripper_control.py
 │       └── specification/     # Technical drawings
 ├── docs/
 │   ├── assembly-guide.md      # Step-by-step assembly
-│   ├── bom-amazon.md          # Bill of materials with links
+│   ├── bom.md          # Bill of materials with links
 │   ├── quick-start.md         # Getting started guide
 │   └── specifications.md      # Technical specifications
 ├── models/
@@ -205,7 +205,7 @@ python software/python/gripper_control.py
 |----------|-------------|
 | [Quick Start Guide](docs/quick-start.md) | Get running in 30 minutes |
 | [Assembly Guide](docs/assembly-guide.md) | Step-by-step with images |
-| [Bill of Materials](docs/bom-amazon.md) | Parts list with Amazon links |
+| [Bill of Materials](docs/bom.md) | Parts list with Amazon links |
 | [Specifications](docs/specifications.md) | Technical details |
 | [3D Models](models/README.md) | Print settings and files |
 
