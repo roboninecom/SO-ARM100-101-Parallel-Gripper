@@ -19,8 +19,6 @@
 | Article | Description | Qty | Price | Link |
 |---------|-------------|:---:|-------|------|
 | | Round Rod D6x125 mm | 2 | ~$7.99 (5pcs) | [Amazon](https://www.amazon.com/uxcell-Stainless-Steel-Round-Length/dp/B07GXBVQ6T) |
-| | Round Rod D6x150 mm | 2 | ~$8.99 (5pcs) | [Amazon](https://www.amazon.com/150mm-Stainless-Industry-Working-Hobbies/dp/B0D5D2LB3Y) |
-| | Threaded Rod M3x150 mm | 2 | ~$7.99 (10pcs) | [Amazon](https://www.amazon.com/Mriuuod-M3x150mm-Threaded-Stainless-Threads/dp/B0CNLN777Z) |
 
 ## 3D-Printed Parts
 
@@ -40,7 +38,6 @@
 |---------|-------------|:---:|-------|------|
 | | Screw DIN 7991 M3x8 | 8 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Countersunk-Machine-Stainless-Quantity-BelMetric/dp/B07JW9XF4Z) |
 | | Screw DIN 7991 M3x20 | 4 | ~$7.49 (100pcs) | [Amazon](https://www.amazon.com/M3-0-5-Stainless-Machine-Phillips-Countersunk/dp/B0C6Z7HKQJ) |
-| | Screw DIN 7991 M4x6 | 2 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/M4-0-7-Stainless-Machine-Phillips-Countersunk/dp/B07JHD5YMV) |
 | | Screw DIN 912 M3x50 | 4 | ~$7.99 (50pcs) | [Amazon](https://www.amazon.com/BNUOK-Socket-Stainless-Threads-Spanner/dp/B0DJQG8Q7F) |
 | | Nut DIN 934 M3 | 4 | ~$5.99 (100pcs) | [Amazon](https://www.amazon.com/Stainless-Steel-Machine-Bright-Finish/dp/B07T7NCS7D) |
 | | Set Screw DIN 913 M3x4 | 4 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Socket-M3-0-5-Metric-14-9-45H-Quantity/dp/B07CPNB1WP) |
@@ -55,10 +52,10 @@
 |----------|-------|-----------|
 | Electronics | Servo ST-3215 + Adapter | ~$40.00 |
 | Bearings | MR106ZZ (2) + LM6UU (4) | ~$6.00* |
-| Rods | D6x125 (2) + D6x150 (2) + M3x150 (2) | ~$10.00* |
+| Rods | D6x125 (2) | ~$4.00* |
 | 3D-Printed Parts | 5 parts | ~$17.00 |
 | Fasteners | Various screws & nuts | ~$3.00* |
-| **Total** | | **~$76.00** |
+| **Total** | | **~$70.00** |
 
 ### Full Pack Prices (with extras)
 
@@ -66,10 +63,10 @@
 |----------|------------|
 | Electronics | ~$40.00 |
 | Bearings | ~$14.48 |
-| Rods | ~$24.97 |
+| Rods | ~$7.99 |
 | 3D-Printed Parts | ~$17.00 |
-| Fasteners | ~$42.44 |
-| **Total** | **~$139.00** |
+| Fasteners | ~$35.45 |
+| **Total** | **~$115.00** |
 
 *\* Pro-rated from bulk pack prices*
 
