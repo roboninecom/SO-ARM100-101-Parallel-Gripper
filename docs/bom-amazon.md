@@ -18,7 +18,7 @@
 
 | Article | Description | Qty | Price | Link |
 |---------|-------------|:---:|-------|------|
-| | Round Rod D6x125 mm | 2 | ~$7.99 (5pcs) | [Amazon](https://www.amazon.com/uxcell-Stainless-Steel-Round-Length/dp/B07GXBVQ6T) |
+| | Round Rod D6x125 mm | 2 | ~$5.56 (2pcs) | [eBay](https://www.ebay.com/itm/374924746654) |
 
 ## 3D-Printed Parts
 
@@ -36,10 +36,10 @@
 
 | Article | Description | Qty | Price | Link |
 |---------|-------------|:---:|-------|------|
-| | Screw DIN 7991 M3x8 | 8 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Countersunk-Machine-Stainless-Quantity-BelMetric/dp/B07JW9XF4Z) |
-| | Screw DIN 7991 M3x20 | 4 | ~$7.49 (100pcs) | [Amazon](https://www.amazon.com/M3-0-5-Stainless-Machine-Phillips-Countersunk/dp/B0C6Z7HKQJ) |
-| | Screw DIN 912 M3x50 | 4 | ~$7.99 (50pcs) | [Amazon](https://www.amazon.com/BNUOK-Socket-Stainless-Threads-Spanner/dp/B0DJQG8Q7F) |
-| | Nut DIN 934 M3 | 4 | ~$5.99 (100pcs) | [Amazon](https://www.amazon.com/Stainless-Steel-Machine-Bright-Finish/dp/B07T7NCS7D) |
+| | Screw DIN 7991 M3x8 | 8 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Countersunk-Socket-Screws-100-piece-Stainless/dp/B01HBN0X58) |
+| | Screw DIN 7991 M3x20 | 4 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Countersunk-Socket-Screws-100-piece-Stainless/dp/B01HBN0X64) |
+| | Screw DIN 912 M3x50 | 4 | ~$9.68 (100pcs) | [Amazon](https://www.amazon.com/iExcell-Stainless-Socket-Screws-Threaded/dp/B07C9F2347) |
+| | Nut DIN 934 M3 | 4 | ~$6.49 (100pcs) | [Amazon](https://www.amazon.com/Sutemribor-Female-Threaded-Stainless-Steel/dp/B07MLLQ3LH) |
 | | Set Screw DIN 913 M3x4 | 4 | ~$6.99 (100pcs) | [Amazon](https://www.amazon.com/Socket-M3-0-5-Metric-14-9-45H-Quantity/dp/B07CPNB1WP) |
 
 ---
@@ -63,10 +63,10 @@
 |----------|------------|
 | Electronics | ~$40.00 |
 | Bearings | ~$14.48 |
-| Rods | ~$7.99 |
+| Rods | ~$5.56 |
 | 3D-Printed Parts | ~$17.00 |
 | Fasteners | ~$35.45 |
-| **Total** | **~$115.00** |
+| **Total** | **~$113.00** |
 
 *\* Pro-rated from bulk pack prices*
 
