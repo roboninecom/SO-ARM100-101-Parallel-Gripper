@@ -160,17 +160,14 @@ Follow the [Assembly Guide](docs/assembly-guide.md) with step-by-step images:
 8. Add rigidity screws
 9. Mount to robot arm (optional)
 
-### 4. Software Setup
+### 4. Software
 
 ```bash
-# Install STServo SDK
-git clone https://github.com/FEETECH-RC/STServo_SDK_Python.git
+# Configure servo motor if necessary
+https://lab.robonine.com/tools/robonine/feetech-bus
 
-# Install dependencies
-pip install pyserial
-
-# Run gripper control
-python software/python/gripper_control.py
+# Control gripper
+https://lab.robonine.com/tools/robonine/control-robot
 ```
 
 ---
