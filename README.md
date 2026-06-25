@@ -163,17 +163,14 @@ Follow the [Assembly Guide](docs/assembly-guide.md) with step-by-step images:
 10. Attach Camera Spacer and UVC camera, fix with 4x screws and nuts M2 (optional)
 11. Mount to robot arm (optional)
 
-### 4. Software Setup
+### 4. Software
 
 ```bash
-# Install STServo SDK
-git clone https://github.com/FEETECH-RC/STServo_SDK_Python.git
+# Configure servo motor if necessary
+https://lab.robonine.com/tools/robonine/feetech-bus
 
-# Install dependencies
-pip install pyserial
-
-# Run gripper control
-python software/python/gripper_control.py
+# Control gripper
+https://lab.robonine.com/tools/robonine/control-robot
 ```
 
 ---
