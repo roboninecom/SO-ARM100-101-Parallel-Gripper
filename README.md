@@ -137,11 +137,12 @@ Download STL files from [`models/parts/`](models/). Compatible with popular prin
 |------|:---:|----------|
 | Main frame (RB9.01.062.010) | 1 | 20% infill |
 | Clamp (RB9.01.062.020) | 2 | 20% infill |
-| Gear rack (RB9.01.062.030) | 2 | 30% infill |
-| Gear (RB9.01.062.040) | 1 | 30% infill |
+| Gear rack (RB9.01.062.030) | 2 | 100% infill |
+| Gear (RB9.01.062.040) | 1 | 100% infill |
 | Camera holder (RB9.01.060.074) | 1 | 20% infill |
 | Holder (RB9.01.060.080) | 1 | 20% infill |
 | Camera Spacer (RB9.01.060.090) | 1 | 20% infill |
+| D405 holder (RB9.01.060.110) | 1 | 20% infill |
 
 ### 2. Order Components (1-2 days)
 

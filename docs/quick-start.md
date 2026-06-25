@@ -26,9 +26,13 @@ Get your Follower Gripper for SO-ARM101 up and running!
 1. Download STL files from `models/parts/`
 2. Print with recommended settings:
    - Layer height: 0.2mm
-   - Infill: 20% (frame/clamps), 30% (gears)
+   - Infill: 20% (frame/clamps), 100% (gears)
    - Material: PLA or PETG
 3. Remove supports
+
+![Test plate](../assets/images/assembly/rod-test-plate.PNG)
+
+To ensure the rods you purchase fit better into the clamps, you need to use a test piece. Print it and, working from the largest hole to the smallest, select the diameter that allows the rod to fit into the test part without difficulty and with minimal clearance. Then print clamps with the same hole diameter which is mentioned in stl file name (e.g. RB9.01.062.021 (D6.1) if you choose diameter 6.1 mm).
 
 **Compatible 3D Printers** (180×180mm+ bed):
 - Bambu Lab A1 mini

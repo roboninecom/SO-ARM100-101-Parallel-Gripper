@@ -27,7 +27,7 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 ---
 
-## Step 2: Servo Positioning
+## Step 2: Servo Positioning and Torque Limit
 
 ![Servo positioning](../assets/images/assembly/Feetech-Servo-Window.png)
 
@@ -42,24 +42,31 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 5. Check the box to enable torque on servo.
 6. Move the slider to the left.
 
+![Max torque limit](../assets/images/assembly/max-torque-window.png)
+
+7. Switch the window to a tab "Programming".
+8. Choose parameter "Max Torque Limit", set it to 500 ans press "Save".
+
 ---
 
 ## Step 3: Clamps
 
-![Clamps](../assets/images/assembly/clamp+rack.png)
+![Clamps](../assets/images/assembly/clamp+rack+nail.PNG)
 
 **Components needed:**
-- 2x Clamps (RB9.01.062.020)
-- 2x Gear racks (RB9.01.062.030)
+- 2x Clamps (RB9.01.062.021)
+- 2x Gear racks (RB9.01.062.031)
+- 2x Nails (RB9.01.062.100)
 
 **Instructions:**
-1. Attach gear racks to clamps.
+1. Insert gear racks in clamps from side direction.
+2. Then insert nails from back direction.
 
 ---
 
 ## Step 4: Rods
 
-![Rods](../assets/images/assembly/rods+clamps.png)
+![Rods](../assets/images/assembly/rods+clamps.PNG)
 
 **Components needed:**
 - 2x Rods D6x125mm
@@ -145,5 +152,4 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 Congratulations! Your SO-ARM101 is now assembled and ready for use.
 
 ### Next Steps
-- Configure servo parameters using the Feetech software
 - Test gripper operation before use
