@@ -2,6 +2,19 @@
 
 This folder contains STL files for the Follower Gripper assembly.
 
+## Histology Slide Gripper Add-ons
+
+This fork adds replacement clamps and an angled Arducam holder for microscope slide handling. The printable STL files and editable STEP files live in [`histology-slide-gripper/`](histology-slide-gripper/).
+
+| File | Format | Description |
+|------|--------|-------------|
+| `microscope-slide-clamp-1.stl` | STL | First printable jaw for standard microscope slides and staining dippers/racks |
+| `microscope-slide-clamp-1.step` | STEP | Editable source CAD for clamp 1 |
+| `microscope-slide-clamp-2.stl` | STL | Second printable jaw for standard microscope slides and staining dippers/racks |
+| `microscope-slide-clamp-2.step` | STEP | Editable source CAD for clamp 2 |
+| `microscope-slide-camera-holder-arducam.stl` | STL | Printable angled holder for the Arducam USB camera |
+| `microscope-slide-camera-holder-arducam.step` | STEP | Editable source CAD for the Arducam holder |
+
 ## Complete Assembly
 
 | File | Description | Compatible Printers |
