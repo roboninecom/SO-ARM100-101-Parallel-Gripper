@@ -214,6 +214,8 @@ https://lab.robonine.com/tools/robonine/control-robot
 |----------|-------------|
 | [Quick Start Guide](docs/quick-start.md) | Get running in 30 minutes |
 | [Assembly Guide](docs/assembly-guide.md) | Step-by-step with images |
+| [Gripper Assembly Guide (PDF)](docs/Assembly%20Guide%20Follower%20Gripper.pdf) | Printable gripper assembly instructions |
+| [SO-ARM101 Assembly Guide (PDF)](docs/Assembly%20Guide%20SO-ARM101.pdf) | Full SO-ARM101 arm assembly instructions |
 | [Bill of Materials](docs/bom.md) | Parts list with Amazon links |
 | [Specifications](docs/specifications.md) | Technical details |
 | [3D Models](models/README.md) | Print settings and files |
