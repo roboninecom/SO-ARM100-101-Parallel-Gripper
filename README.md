@@ -40,7 +40,7 @@ This fork is focused on histology and histotechnology automation: gentle slide p
 | Microscope slide clamps | New long, flat clamp geometry supports direct pickup of standard 75 x 25 mm microscope slides. |
 | Slide rack/dipper handling | Clamp spacing and tips are intended to engage slide staining dippers/racks like the Medicus Health slide staining dipper linked in the BOM. |
 | Angled Arducam holder | A printable holder aims an Arducam global-shutter USB camera at the gripper jaws for close-up monitoring of slide and rack pickup. |
-| Printable and source CAD | STL and STEP files for both clamps and the Arducam holder are in [`models/histology-slide-gripper/`](models/histology-slide-gripper/). |
+| Complete assembly CAD | A full printable STL and editable STEP assembly are in [`models/histology-slide-gripper/`](models/histology-slide-gripper/). |
 
 <div align="center">
 
@@ -72,6 +72,14 @@ Related build/demo post: [Michael Viacheslavov on LinkedIn](https://www.linkedin
 ## 📸 Gallery
 
 <div align="center">
+
+### Parallel Microscope Slide Gripper Fork
+
+| Front view | Jaw geometry | Isometric assembly |
+|:-:|:-:|:-:|
+| <img src="assets/images/histology/parallel-microscope-gripper-front.png" alt="Front CAD view of the parallel microscope slide gripper fork" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-side.png" alt="Angled CAD view showing the microscope slide jaw geometry" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-isometric.png" alt="Isometric CAD view of the full parallel microscope slide gripper assembly" width="250"> |
+
+*The fork replaces the general-purpose jaws with long, narrow microscope slide fingers and keeps the camera view aligned with the grasping zone for slide and staining dipper/rack handling.*
 
 ### Gripper on SO-ARM101
 
@@ -164,8 +172,7 @@ The gripper supports multiple cameras via interchangeable camera holder:
 |-----------|:---:|-------|------|
 | Arducam 100fps Mono Global Shutter USB Camera, OV9281 | 1 | Camera used with the angled holder to watch slide and rack pickup near the jaws. | [Amazon UK](https://www.amazon.co.uk/Arducam-Shutter-Distortion-Computer-Raspberry/dp/B0FXWWF55X) |
 | Slide Staining Plastic Dipper with Handle | 1+ | Reference staining dipper/rack target; designed for standard 75 x 25 mm slides. | [Medicus Health](https://www.medicus-health.com/slide-staining-dipper.html) |
-| Histology slide clamp pair | 1 set | Print `microscope-slide-clamp-1.stl` and `microscope-slide-clamp-2.stl`; STEP files are included for edits. | [CAD files](models/histology-slide-gripper/) |
-| Arducam angled camera holder | 1 | Print `microscope-slide-camera-holder-arducam.stl`; STEP file is included for edits. | [CAD files](models/histology-slide-gripper/) |
+| Parallel microscope slide gripper assembly | 1 | Print `the-parallel-microscope-slide-gripper.stl`; STEP file is included for edits. | [CAD files](models/histology-slide-gripper/) |
 
 ---
 
@@ -192,9 +199,7 @@ Use these files when building the microscope slide / staining dipper version:
 
 | Part | Qty | File |
 |------|:---:|------|
-| Microscope Slide Clamp 1 | 1 | [`microscope-slide-clamp-1.stl`](models/histology-slide-gripper/microscope-slide-clamp-1.stl) / [`STEP`](models/histology-slide-gripper/microscope-slide-clamp-1.step) |
-| Microscope Slide Clamp 2 | 1 | [`microscope-slide-clamp-2.stl`](models/histology-slide-gripper/microscope-slide-clamp-2.stl) / [`STEP`](models/histology-slide-gripper/microscope-slide-clamp-2.step) |
-| Arducam angled camera holder | 1 | [`microscope-slide-camera-holder-arducam.stl`](models/histology-slide-gripper/microscope-slide-camera-holder-arducam.stl) / [`STEP`](models/histology-slide-gripper/microscope-slide-camera-holder-arducam.step) |
+| Parallel Microscope Slide Gripper | 1 | [`the-parallel-microscope-slide-gripper.stl`](models/histology-slide-gripper/the-parallel-microscope-slide-gripper.stl) / [`STEP`](models/histology-slide-gripper/the-parallel-microscope-slide-gripper.step) |
 
 ### 2. Order Components (1-2 days)
 
