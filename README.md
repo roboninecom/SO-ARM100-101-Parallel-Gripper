@@ -277,6 +277,24 @@ See the [Simulation Guide](simulation/README.md) for full setup, architecture de
 
 ---
 
+## 🔬 Community Mods
+
+Variants of the gripper built by the community, each self-contained in [`community/`](community/):
+
+| Mod | Author | Description |
+|-----|--------|-------------|
+| [Histology Slide Gripper](community/histology-slide-gripper/) | [Michael Viacheslavov](https://github.com/histochemichael) | Clamps for 75 x 25 mm microscope slides and staining dippers/racks, plus an angled Arducam holder for monitoring the grasp. |
+
+<div align="center">
+
+<a href="community/histology-slide-gripper/"><img src="community/histology-slide-gripper/assets/slide-gripper-single-slide.jpg" alt="Histology slide gripper mod holding a microscope slide" width="400"></a>
+
+*Histology Slide Gripper mod — click for full description, CAD files, and demo*
+
+</div>
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Please feel free to:
