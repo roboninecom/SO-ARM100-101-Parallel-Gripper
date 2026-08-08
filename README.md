@@ -1,14 +1,12 @@
-# SO-ARM100/101 Parallel Slide Gripper for Histology Slides
+# SO-ARM100/101 Parallel Gripper
 
 <div align="center">
 
-<a href="assets/media/histology-slide-gripper-demo.gif"><img src="assets/images/histology/slide-gripper-single-slide.jpg" alt="SO-ARM100/101 histology slide gripper holding a microscope slide" width="560"></a>
+[![SO-ARM101 Parallel Gripper](assets/images/SO%20ARM%20101%20Parallel%20Gripper%20Live.jpg)](https://youtube.com/shorts/bSyXjgNGXZk)
 
-**Histology slide/rack handling fork of the Robo9 SO-ARM100/101 Parallel Gripper**
+**🎥 [Watch the gripper in action!](https://youtube.com/shorts/bSyXjgNGXZk)**
 
 A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robonine.com)** for the open-source SO-ARM100/101 robotic platform.
-
-This fork adapts that gripper for a histology slide-handling workflow. The replacement clamps are shaped to pick up standard 75 x 25 mm microscope slides as well as slide staining dippers/racks, and the new angled camera holder aims an Arducam USB camera at the grasp so slide and rack pickups can be monitored directly.
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
 [![Cost: ~$70](https://img.shields.io/badge/Cost-~%2470-green.svg)](docs/bom.md)
@@ -20,37 +18,6 @@ This fork adapts that gripper for a histology slide-handling workflow. The repla
 📩 Email: [hello@robonine.com](mailto:hello@robonine.com)
 
 </div>
-
----
-
-## Histology Fork Highlights
-
-This fork is focused on histology and histotechnology automation: gentle slide pickup, rack/dipper pickup, and a close camera view of the gripper contact point.
-
-<div align="center">
-
-![Histology slide gripper demo](assets/media/histology-slide-gripper-demo.gif)
-
-*SO-ARM100/101 parallel gripper using the custom clamps to handle microscope slides and a staining dipper/rack.*
-
-</div>
-
-| Addition | What changed |
-|----------|--------------|
-| Microscope slide clamps | New long, flat clamp geometry supports direct pickup of standard 75 x 25 mm microscope slides. |
-| Slide rack/dipper handling | Clamp spacing and tips are intended to engage slide staining dippers/racks like the Medicus Health slide staining dipper linked in the BOM. |
-| Angled Arducam holder | A printable holder aims an Arducam global-shutter USB camera at the gripper jaws for close-up monitoring of slide and rack pickup. |
-| Complete assembly CAD | A full printable STL and editable STEP assembly are in [`models/histology-slide-gripper/`](models/histology-slide-gripper/). |
-
-<div align="center">
-
-| Single slide pickup | Staining dipper/rack pickup | Arducam holder view |
-|:-:|:-:|:-:|
-| ![Clamp holding a microscope slide](assets/images/histology/slide-gripper-single-slide.jpg) | ![Clamp aligned with slide staining dipper](assets/images/histology/slide-gripper-staining-dipper.jpg) | ![Arducam holder above the gripper jaws](assets/images/histology/arducam-holder-front.jpg) |
-
-</div>
-
-Related build/demo post: [Michael Viacheslavov on LinkedIn](https://www.linkedin.com/posts/michael-viacheslavov_histology-histotechnology-robotics-ugcPost-7482570199859240960-Gqpw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGKDHDMBWlHkM9NvJS2ROTLuEVGhBNUU2dU)
 
 ---
 
@@ -73,14 +40,6 @@ Related build/demo post: [Michael Viacheslavov on LinkedIn](https://www.linkedin
 
 <div align="center">
 
-### Parallel Microscope Slide Gripper Fork
-
-| Front view | Jaw geometry | Isometric assembly |
-|:-:|:-:|:-:|
-| <img src="assets/images/histology/parallel-microscope-gripper-front.png" alt="Front CAD view of the parallel microscope slide gripper fork" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-side.png" alt="Angled CAD view showing the microscope slide jaw geometry" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-isometric.png" alt="Isometric CAD view of the full parallel microscope slide gripper assembly" width="250"> |
-
-*The fork replaces the general-purpose jaws with long, narrow microscope slide fingers and keeps the camera view aligned with the grasping zone for slide and staining dipper/rack handling.*
-
 ### Gripper on SO-ARM101
 
 ![Gripper mounted on SO-ARM101](assets/images/specification/07-gripper-on-so-arm100.jpg)
@@ -94,6 +53,33 @@ Related build/demo post: [Michael Viacheslavov on LinkedIn](https://www.linkedin
 *128 × 109 × 130.5 mm, full stroke 84 mm*
 
 </div>
+
+---
+
+## 🔬 Community Mod: Histology Slide Gripper
+
+A community variant by [Michael Viacheslavov](https://github.com/histochemichael) adapts the gripper for histology and histotechnology automation: gentle pickup of standard 75 x 25 mm microscope slides, slide staining dippers/racks, and a close camera view of the grasp.
+
+| Addition | What changed |
+|----------|--------------|
+| Microscope slide clamps | Long, flat clamp geometry supports direct pickup of standard 75 x 25 mm microscope slides. |
+| Slide rack/dipper handling | Clamp spacing and tips engage slide staining dippers/racks like the Medicus Health slide staining dipper linked in the BOM. |
+| Angled Arducam holder | A printable holder aims an Arducam global-shutter USB camera at the gripper jaws for close-up monitoring of slide and rack pickup. |
+| Complete assembly CAD | A full printable STL and editable STEP assembly are in [`models/histology-slide-gripper/`](models/histology-slide-gripper/). |
+
+<div align="center">
+
+| Single slide pickup | Staining dipper/rack pickup | Arducam holder view |
+|:-:|:-:|:-:|
+| ![Clamp holding a microscope slide](assets/images/histology/slide-gripper-single-slide.jpg) | ![Clamp aligned with slide staining dipper](assets/images/histology/slide-gripper-staining-dipper.jpg) | ![Arducam holder above the gripper jaws](assets/images/histology/arducam-holder-front.jpg) |
+
+| Front view | Jaw geometry | Isometric assembly |
+|:-:|:-:|:-:|
+| <img src="assets/images/histology/parallel-microscope-gripper-front.png" alt="Front CAD view of the microscope slide gripper mod" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-side.png" alt="Angled CAD view showing the microscope slide jaw geometry" width="250"> | <img src="assets/images/histology/parallel-microscope-gripper-isometric.png" alt="Isometric CAD view of the full microscope slide gripper assembly" width="250"> |
+
+</div>
+
+🎥 Demo video: [slide and staining rack pickup on LinkedIn](https://www.linkedin.com/posts/michael-viacheslavov_histology-histotechnology-robotics-ugcPost-7482570199859240960-Gqpw/)
 
 ---
 
@@ -166,7 +152,7 @@ The gripper supports multiple cameras via interchangeable camera holder:
 | 3D Printing | 8 parts (~100-150g PLA) | ~$12 |
 | Fasteners | M2/M4 screws, M2 nuts, M3 set screws | ~$3 |
 
-### Histology Add-on BOM
+### Histology Mod Add-ons (community)
 
 | Component | Qty | Notes | Link |
 |-----------|:---:|-------|------|
@@ -193,9 +179,9 @@ Download STL files from [`models/parts/`](models/). Compatible with popular prin
 | Camera Spacer (RB9.01.060.090) | 1 | 20% infill |
 | D405 holder (RB9.01.060.110) | 1 | 20% infill |
 
-### Histology fork parts
+### Histology mod parts (optional)
 
-Use these files when building the microscope slide / staining dipper version:
+Use these files when building the community microscope slide / staining dipper variant:
 
 | Part | Qty | File |
 |------|:---:|------|

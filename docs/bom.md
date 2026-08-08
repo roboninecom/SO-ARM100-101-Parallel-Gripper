@@ -43,13 +43,13 @@
 
 ## Histology Slide Workflow Add-ons
 
-These items are specific to this fork's microscope slide and staining dipper/rack workflow and are not included in the original follower gripper cost total.
+These items are specific to the community histology slide gripper mod's microscope slide and staining dipper/rack workflow and are not included in the follower gripper cost total.
 
 | Component | Description | Qty | Price | Link |
 |-----------|-------------|:---:|-------|------|
 | Arducam 100fps Mono Global Shutter USB Camera, OV9281 | UVC camera for monitoring the slide/rack grasp from the angled holder | 1 | See listing | [Amazon UK](https://www.amazon.co.uk/Arducam-Shutter-Distortion-Computer-Raspberry/dp/B0FXWWF55X) |
 | Slide Staining Plastic Dipper with Handle | Example slide staining dipper/rack target for 75 x 25 mm microscope slides | 1+ | See listing | [Medicus Health](https://www.medicus-health.com/slide-staining-dipper.html) |
-| Parallel microscope slide gripper assembly | Fork-specific printable assembly for slide and rack handling | 1 | Print cost | [STL/STEP files](../models/histology-slide-gripper/) |
+| Parallel microscope slide gripper assembly | Mod-specific printable assembly for slide and rack handling | 1 | Print cost | [STL/STEP files](../models/histology-slide-gripper/) |
 
 ## Fasteners
 

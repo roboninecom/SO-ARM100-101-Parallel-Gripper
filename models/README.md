@@ -4,12 +4,12 @@ This folder contains STL files for the Follower Gripper assembly.
 
 ## Histology Slide Gripper Add-ons
 
-This fork adds a complete parallel microscope slide gripper assembly for slide and staining dipper/rack handling. The printable STL file and editable STEP file live in [`histology-slide-gripper/`](histology-slide-gripper/).
+A community mod adds a complete parallel microscope slide gripper assembly for slide and staining dipper/rack handling. The printable STL file and editable STEP file live in [`histology-slide-gripper/`](histology-slide-gripper/).
 
 | File | Format | Description |
 |------|--------|-------------|
-| `the-parallel-microscope-slide-gripper.stl` | STL | Printable full fork assembly for standard microscope slides and staining dippers/racks |
-| `the-parallel-microscope-slide-gripper.step` | STEP | Editable source CAD for the full fork assembly |
+| `the-parallel-microscope-slide-gripper.stl` | STL | Printable full assembly for standard microscope slides and staining dippers/racks |
+| `the-parallel-microscope-slide-gripper.step` | STEP | Editable source CAD for the full assembly |
 
 ## Complete Assembly
 

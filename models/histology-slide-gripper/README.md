@@ -1,10 +1,10 @@
 # Histology Slide Gripper CAD
 
-This folder contains the fork-specific printable and editable CAD files for the complete parallel microscope slide gripper assembly.
+This folder contains the printable and editable CAD files for the complete parallel microscope slide gripper assembly — a community mod for histology slide and staining rack handling.
 
 | File | Format | Use |
 |------|--------|-----|
-| `the-parallel-microscope-slide-gripper.stl` | STL | Printable full assembly for the microscope slide gripper fork. |
+| `the-parallel-microscope-slide-gripper.stl` | STL | Printable full assembly for the microscope slide gripper mod. |
 | `the-parallel-microscope-slide-gripper.step` | STEP | Editable CAD source for the full assembly. |
 
 ## Notes
