@@ -91,7 +91,7 @@ The mount pose was solved, not guessed: `base.stl` was fitted against
 24 axis-aligned rotations and scoring nearest-neighbour distance. Best fit is
 **+90 deg about X** (CAD +Y -> link5 +Z, CAD +Z -> link5 -Y) with a 2.0 mm median
 residual — the slide clamps hang perpendicular to Robo9's pointed clamps, matching
-your Fusion assembly.
+the Fusion assembly.
 
 ## Stability
 
@@ -99,7 +99,7 @@ The model settles to `max|qvel| = 0` and stays there. If you ever see it shake, 
 first thing to check is stray contacts (`ncon` in the viewer's info panel should be 0
 with the arm at rest). Three things were needed:
 
-1. **`<exclude body1="world" body2="link1_1"/>`** � the real fix. The URDF importer
+1. **`<exclude body1="world" body2="link1_1"/>`** - the real fix. The URDF importer
    merges `base_link` into `worldbody`, and MuJoCo skips parent/child collisions
    *except* when the parent is the world body. So the base mesh and link1 mesh
    interpenetrated at the shoulder, producing a permanent contact that pinned the yaw
@@ -127,7 +127,7 @@ with the arm at rest). Three things were needed:
   URDF's conservative 1.5.
 - The 2 mm alignment residual is real: the "Main frame_125 follower" is not identical
   to the frame baked into `link5_1.stl`.
-- `sg_pinion_joint` is cosmetic � it carries no load, because the two racks are coupled
+- `sg_pinion_joint` is cosmetic - it carries no load, because the two racks are coupled
   to each other directly. It exists so the gear turns the right way on screen.
 
 ## Driving it in the MuJoCo viewer

@@ -1,5 +1,8 @@
 """Strip xacro from the SO-101 URDF, drop the stock Robo9 clamps, compile to MJCF."""
-import re, pathlib, xml.etree.ElementTree as ET
+import pathlib
+import re
+import xml.etree.ElementTree as ET
+
 import mujoco
 
 W = pathlib.Path(__file__).parent

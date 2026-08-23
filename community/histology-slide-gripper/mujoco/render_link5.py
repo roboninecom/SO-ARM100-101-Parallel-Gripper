@@ -1,4 +1,7 @@
-import numpy as np, mujoco, imageio.v2 as imageio
+import imageio.v2 as imageio
+import mujoco
+import numpy as np
+
 XML = """
 <mujoco>
   <compiler angle="radian" meshdir="meshes/arm"/>
@@ -18,10 +21,18 @@ XML = """
     <site pos="0 0 0" size="0.004" rgba="1 0 1 1"/>
   </worldbody>
 </mujoco>"""
-m = mujoco.MjModel.from_xml_string(XML); d = mujoco.MjData(m); mujoco.mj_forward(m,d)
-frames=[]
+m = mujoco.MjModel.from_xml_string(XML)
+d = mujoco.MjData(m)
+mujoco.mj_forward(m, d)
+frames = []
 with mujoco.Renderer(m, 800, 700) as r:
-    for az,el in ((135,-20),(215,-15),(90,0),(0,-80)):
-        c=mujoco.MjvCamera(); c.azimuth=az; c.elevation=el; c.distance=0.30; c.lookat[:]=[0,-0.06,0.0]
-        r.update_scene(d,c); frames.append(r.render())
-imageio.imwrite("link5_stock.png", np.hstack(frames)); print("wrote link5_stock.png")
+    for az, el in ((135, -20), (215, -15), (90, 0), (0, -80)):
+        c = mujoco.MjvCamera()
+        c.azimuth = az
+        c.elevation = el
+        c.distance = 0.30
+        c.lookat[:] = [0, -0.06, 0.0]
+        r.update_scene(d, c)
+        frames.append(r.render())
+imageio.imwrite("link5_stock.png", np.hstack(frames))
+print("wrote link5_stock.png")
