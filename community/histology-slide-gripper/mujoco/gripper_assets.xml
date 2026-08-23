@@ -1,0 +1,16 @@
+<mujocoinclude>
+  <!-- Geometry exported directly from "The Microscope Slide Gripper Current v10"
+       (Fusion), grouped per rigid link and baked into assembly coordinates.
+       Units in the STLs are mm, hence scale 0.001. -->
+  <asset>
+    <mesh name="sg_base"      file="meshes/base.stl"      scale="0.001 0.001 0.001"/>
+    <mesh name="sg_jaw_right" file="meshes/jaw_right.stl"  scale="0.001 0.001 0.001"/>
+    <mesh name="sg_jaw_left"  file="meshes/jaw_left.stl"   scale="0.001 0.001 0.001"/>
+    <mesh name="sg_pinion"    file="meshes/pinion.stl"     scale="0.001 0.001 0.001"/>
+
+    <material name="sg_frame" rgba="0.82 0.84 0.86 1"/>
+    <material name="sg_jaw"   rgba="0.35 0.78 0.35 1"/>
+    <material name="sg_gear"  rgba="0.90 0.70 0.20 1"/>
+    <material name="sg_pad"   rgba="0.90 0.30 0.30 0.35"/>
+  </asset>
+</mujocoinclude>

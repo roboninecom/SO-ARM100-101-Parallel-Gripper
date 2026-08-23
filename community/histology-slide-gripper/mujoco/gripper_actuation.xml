@@ -1,0 +1,18 @@
+<mujocoinclude>
+  <equality>
+    <!-- Both racks mesh with the one pinion, so the jaws mirror exactly. -->
+    <joint joint1="sg_jaw_left_joint" joint2="sg_jaw_right_joint" polycoef="0 1 0 0 0"
+           solimp="0.99 0.9999 0.001" solref="0.01 1"/>
+    <!-- pinion angle = -(rack travel) / 7.2 mm pitch radius.  Sign matches the CAD:
+         Drive_Pinion runs 0 -> -4.9306 rad (clockwise looking down +Z) to close. -->
+    <joint joint1="sg_pinion_joint" joint2="sg_jaw_right_joint" polycoef="0 -138.889 0 0 0"
+           solimp="0.99 0.9999 0.001" solref="0.01 1"/>
+  </equality>
+
+  <actuator>
+    <!-- One STS3215 drives the pinion; commanded here in jaw-travel metres.
+         0 = open (84 mm aperture), 0.0355 = closed (13 mm). -->
+    <position name="sg_grip" joint="sg_jaw_right_joint" ctrlrange="0 0.0355"
+              kp="800" kv="20" forcerange="-80 80"/>
+  </actuator>
+</mujocoinclude>
