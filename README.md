@@ -8,9 +8,9 @@
 
 A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robonine.com)** for the open-source SO-ARM100/101 robotic platform.
 
-[![Hardware: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--P--2.0-blue.svg)](LICENSES/CERN-OHL-P-2.0.txt)
-[![Software: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-blue.svg)](LICENSES/Apache-2.0.txt)
-[![Docs: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-blue.svg)](LICENSES/CC-BY-4.0.txt)
+[![Hardware: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--P--2.0-blue.svg)](HARDWARE-LICENSE.txt)
+[![Software: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-blue.svg)](SOFTWARE-LICENSE.txt)
+[![Docs: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-blue.svg)](DOCS-LICENSE.txt)
 [![Cost: ~$70](https://img.shields.io/badge/Cost-~%2470-green.svg)](docs/bom.md)
 [![Assembly: 30min](https://img.shields.io/badge/Assembly-30%20min-orange.svg)](docs/assembly-guide.md)
 
@@ -208,8 +208,10 @@ https://lab.robonine.com/tools/robonine/control-robot
 ├── software/
 │   └── python/                # Control software
 ├── examples/                  # Usage examples
-├── LICENSE                    # Licence map (which licence covers what)
-├── LICENSES/                  # Full licence texts
+├── HARDWARE-LICENSE.txt       # CERN-OHL-P-2.0 (CAD, geometry)
+├── SOFTWARE-LICENSE.txt       # Apache-2.0 (code)
+├── DOCS-LICENSE.txt           # CC BY 4.0 (docs, images)
+├── LICENSING.md               # Which licence covers what
 ├── NOTICE                     # Third-party attribution
 ├── REUSE.toml                 # Machine-readable licence map
 ├── RELICENSING.md             # Record of the 2026 relicensing
@@ -322,11 +324,11 @@ material carry different licences:
 
 | Material | Licence |
 |---|---|
-| Hardware designs — `models/`, community CAD, gripper meshes | [CERN-OHL-P-2.0](LICENSES/CERN-OHL-P-2.0.txt) |
-| Software — `software/`, `examples/`, `simulation/`, simulation code in `community/` | [Apache-2.0](LICENSES/Apache-2.0.txt) |
-| Documentation and images — `docs/`, `assets/`, all `README.md` | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
+| Hardware designs — `models/`, community CAD, gripper meshes | [CERN-OHL-P-2.0](HARDWARE-LICENSE.txt) |
+| Software — `software/`, `examples/`, `simulation/`, simulation code in `community/` | [Apache-2.0](SOFTWARE-LICENSE.txt) |
+| Documentation and images — `docs/`, `assets/`, all `README.md` | [CC BY 4.0](DOCS-LICENSE.txt) |
 
-See [`LICENSE`](LICENSE) for the exact file-by-file map and
+See [`LICENSING.md`](LICENSING.md) for the exact file-by-file map and
 [`REUSE.toml`](REUSE.toml) for the machine-readable version.
 
 **Not everything here is Robonine's work.** The SO-ARM101 arm meshes are derived

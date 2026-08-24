@@ -135,7 +135,7 @@ Contributors will be recognized in:
 
 ## License
 
-This project is multi-licensed — see [`LICENSE`](LICENSE) for the full map.
+This project is multi-licensed — see [`LICENSING.md`](LICENSING.md) for the full map.
 
 By submitting a contribution you certify that you have the right to submit it,
 and you agree that it is licensed under the licence that applies to the part of

@@ -2,7 +2,7 @@ SO-ARM100/101 Parallel Gripper
 Copyright (c) 2025 Robonine
 
 This product includes material developed by third parties, listed below.
-See LICENSE for the licence map covering Robonine's own material.
+See LICENSING.md for the licence map covering Robonine's own material.
 
 
 ===============================================================================
@@ -29,7 +29,7 @@ TheRobotStudio — SO-ARM100 / SO-ARM101
 
     link5_1.stl fuses the upstream SO-ARM101 wrist with Robonine's
     RB9.01.062.010 Main frame in a single mesh. It is distributed under
-    Apache-2.0 in its entirety. See LICENSE, section 4.
+    Apache-2.0 in its entirety. See LICENSING.md, section 4.
 
     The robot description in simulation/so_arm_101_description/urdf/ encodes
     kinematics and inertial parameters for the upstream arm and is likewise
@@ -41,7 +41,7 @@ TheRobotStudio — SO-ARM100 / SO-ARM101
 
 Michael Viacheslavov (@histochemichael)
     Author of community/histology-slide-gripper/, contributed to this project
-    and licensed under the same three-way split described in LICENSE.
+    and licensed under the same three-way split described in LICENSING.md.
     Copyright is held by the author.
 
 

@@ -51,4 +51,4 @@ OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
 SPDX-License-Identifier: CERN-OHL-P-2.0
 ```
 
-See the repository `LICENSE` for the full licence map.
+See `LICENSING.md` in the repository root for the full licence map.

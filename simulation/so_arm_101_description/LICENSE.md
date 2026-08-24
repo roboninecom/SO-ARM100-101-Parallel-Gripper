@@ -26,5 +26,8 @@ The robot description under `urdf/` is licensed as software rather than as
 hardware: it encodes kinematics and inertial parameters for the whole arm, much
 of which describes upstream geometry that Robonine does not own.
 
-Full licence texts live in `LICENSES/` in the repository root, alongside
-`NOTICE` (third-party attribution) and `REUSE.toml` (the machine-readable map).
+Full licence texts live in the repository root as `HARDWARE-LICENSE.txt`,
+`SOFTWARE-LICENSE.txt` and `DOCS-LICENSE.txt` (and again under their SPDX names
+in `LICENSES/`, as the REUSE Specification requires). See also `LICENSING.md`
+for the full map, `NOTICE` for third-party attribution, and `REUSE.toml` for the
+machine-readable version.

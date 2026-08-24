@@ -5,14 +5,14 @@ repos:
     hooks:
       - id: trailing-whitespace
         # LICENSES/ and NOTICE must stay byte-for-byte verbatim
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$'
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: end-of-file-fixer
         # LICENSES/ and NOTICE must stay byte-for-byte verbatim
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$'
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: mixed-line-ending
         args: ['--fix=lf']
         # LICENSES/ and NOTICE must stay byte-for-byte verbatim
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$'
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: check-yaml
       - id: check-xml
       - id: check-added-large-files

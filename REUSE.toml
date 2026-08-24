@@ -8,7 +8,11 @@
 # in particular check the eight meshes under
 # community/histology-slide-gripper/mujoco/meshes/arm/.
 #
-# Human-readable version of the same map: see LICENSE.
+# Human-readable version of the same map: see LICENSING.md.
+#
+# The three licence texts exist twice on purpose: LICENSES/ is where the REUSE
+# Specification requires them, and HARDWARE-LICENSE.txt / SOFTWARE-LICENSE.txt /
+# DOCS-LICENSE.txt at the root are what GitHub's licence detection reads.
 
 version = 1
 SPDX-PackageName = "SO-ARM100/101 Parallel Gripper"
@@ -86,7 +90,7 @@ SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
 SPDX-License-Identifier = "CERN-OHL-P-2.0"
 
 [[annotations]]
-path = ["models/README.md", "models/LICENSE.md", "models/parts/LICENSE.md"]
+path = "models/README.md"
 SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
 SPDX-License-Identifier = "CC-BY-4.0"
 

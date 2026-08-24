@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-An open-source hardware project: a 3D-printed parallel gripper for the SO-ARM100/101 robot arm (by Robonine). Multi-licensed: CERN-OHL-P-2.0 for hardware/CAD, Apache-2.0 for software, CC BY 4.0 for docs — the map is in `LICENSE`, the machine-readable version in `REUSE.toml`, third-party attribution in `NOTICE`. New files must be covered by `REUSE.toml`; `reuse lint` runs in pre-commit. Most of the repo is CAD models (`models/`), documentation (`docs/`), and images (`assets/`). Code lives in two places:
+An open-source hardware project: a 3D-printed parallel gripper for the SO-ARM100/101 robot arm (by Robonine). Multi-licensed: CERN-OHL-P-2.0 for hardware/CAD, Apache-2.0 for software, CC BY 4.0 for docs — the map is in `LICENSING.md`, the machine-readable version in `REUSE.toml`, third-party attribution in `NOTICE`. New files must be covered by `REUSE.toml`; `reuse lint` runs in pre-commit. Most of the repo is CAD models (`models/`), documentation (`docs/`), and images (`assets/`). Code lives in two places:
 
 - `software/python/gripper_control.py` — standalone servo control script for the Feetech STS3215 (depends on the STServo SDK, which is cloned manually — see `software/python/requirements.txt`; it is not on PyPI). `examples/basic_usage.py` imports from it via a `sys.path` hack.
 - `simulation/so_arm_101_description/` — a ROS2 (Humble) description package that simulates the arm+gripper in 5 physics engines. This is where all tests and most CI live.

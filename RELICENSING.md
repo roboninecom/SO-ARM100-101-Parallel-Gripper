@@ -15,7 +15,7 @@ recorded.
 | Software | GPL-3.0-only | Apache-2.0 |
 | Documentation and images | GPL-3.0-only | CC BY 4.0 |
 
-Copyright holder: **Robonine**. See `LICENSE` for the file-by-file map,
+Copyright holder: **Robonine**. See `LICENSING.md` for the file-by-file map,
 `REUSE.toml` for the machine-readable version, and `NOTICE` for third-party
 attribution.
 
@@ -84,11 +84,24 @@ Robonine cannot grant CERN-OHL-P-2.0 over geometry it does not own, and is free
 to license its own portion under Apache-2.0. Re-exporting it as two meshes would
 let each part carry its proper licence; that is left as future work.
 
-**Notices for binary directories.** CERN-OHL-P-2.0 expects licence notices to be
+**Notices for binary files.** CERN-OHL-P-2.0 expects licence notices to be
 retained in the Source. Binary STL and STEP files cannot carry them, and
 `.pre-commit-config.yaml` deliberately excludes those formats from text hooks.
-Directory-level `LICENSE.md` files plus `REUSE.toml` are how this project
-discharges that obligation.
+`REUSE.toml` is how this project discharges that obligation: it assigns
+copyright and licence to every file by path, and `reuse lint` enforces that
+nothing is left uncovered.
+
+Directory-level notices were deliberately kept to a minimum — only where they
+carry information the root map does not. Two survive:
+`simulation/so_arm_101_description/meshes/LICENSE.md`, because that directory
+mixes Robonine and upstream geometry and someone copying a mesh out needs to see
+that; and `simulation/so_arm_101_description/LICENSE.md`, because that ROS
+package is distributed standalone and has to be self-describing.
+
+**Licence texts exist in two places.** `LICENSES/` is where the REUSE
+Specification requires them; `HARDWARE-LICENSE.txt`, `SOFTWARE-LICENSE.txt` and
+`DOCS-LICENSE.txt` at the root are what GitHub's licence detection reads, so the
+repository shows all three licences rather than none.
 
 **`software/FD.exe` was removed.** It is Feetech's proprietary "FT SCServo Debug"
 tool, committed in `7783073` with no licence grant, and was covered by the
