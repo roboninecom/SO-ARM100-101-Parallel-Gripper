@@ -50,6 +50,29 @@ These items are specific to the slide/rack workflow and are not part of the base
 | Slide Staining Plastic Dipper with Handle | 1+ | Reference staining dipper/rack target; designed for standard 75 x 25 mm slides. | [Medicus Health](https://www.medicus-health.com/slide-staining-dipper.html) |
 | Parallel microscope slide gripper assembly | 1 | Print `the-parallel-microscope-slide-gripper.stl`; STEP file is included for edits. | [`cad/`](cad/) |
 
+## MuJoCo Simulation
+
+<div align="center">
+
+![SO-ARM101 histology slide gripper running in MuJoCo](mujoco/mujoco_simulation_preview.png)
+
+*SO-ARM101 with the histology slide gripper mounted and running in MuJoCo.*
+
+</div>
+
+A self-contained MuJoCo 3.4.0 model is available in [`mujoco/`](mujoco/). It includes the full SO-ARM101 model, gripper meshes, a standalone gripper testbench, build scripts, and a headless grasp-and-lift check.
+
+From the repository root:
+
+```bash
+conda activate lerobot
+cd community/histology-slide-gripper/mujoco
+python -m pip install -r requirements.txt
+python view.py
+```
+
+Use the `sg_grip` control in the MuJoCo viewer to open and close the jaws. See the [simulation README](mujoco/README.md) for model details, controls, validation, and rebuilding instructions.
+
 ## Notes
 
 - The gripper fingers are intended for standard 75 x 25 mm microscope slides and slide staining dippers/racks.

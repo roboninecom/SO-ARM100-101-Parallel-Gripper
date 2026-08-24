@@ -1,0 +1,53 @@
+<mujocoinclude>
+  <!-- Frame convention (inherited from the Fusion assembly):
+         origin = drive-pinion axis,  +Z = pinion axis (servo hangs at -Z),
+         +-X    = jaw travel,         -Y = direction the jaws point.
+       Jaw joints read 0 = fully open (84 mm between the blade faces) and
+       0.0355 = fully closed (13 mm), matching the 35.5 mm rack travel. -->
+  <body name="slide_gripper_base" pos="0 0 0">
+    <geom type="mesh" mesh="sg_base" material="sg_frame" mass="0.20"
+          contype="0" conaffinity="0" group="2"/>
+    <geom name="sg_base_col" type="box" pos="0 0.012 -0.0023" size="0.064 0.036 0.0498"
+          mass="0" group="3" rgba="0.5 0.5 0.5 0.25"/>
+
+    <!-- Drive pinion: 18T, 0.8 module, 7.2 mm pitch radius. Kinematically
+         redundant (the racks are coupled directly) but kept so the gear
+         visibly turns with the jaws. -->
+    <body name="sg_pinion" pos="0 0 0">
+      <joint name="sg_pinion_joint" type="hinge" axis="0 0 1" limited="false"
+             damping="0.001" armature="1e-4"/>
+      <geom type="mesh" mesh="sg_pinion" material="sg_gear" mass="0.008"
+            contype="0" conaffinity="0" group="2"/>
+    </body>
+
+    <body name="sg_jaw_right" pos="0 0 0">
+      <joint name="sg_jaw_right_joint" type="slide" axis="-1 0 0" range="0 0.0355"
+             damping="2.0" armature="0.001"/>
+      <geom type="mesh" mesh="sg_jaw_right" material="sg_jaw" mass="0.035"
+            contype="0" conaffinity="0" group="2"/>
+      <geom name="sg_pad_right" type="box" pos="0.046 -0.10719 0.0285"
+            size="0.004 0.015 0.0025" mass="0" group="3" material="sg_pad"
+            friction="1.5 0.02 0.005" solimp="0.98 0.999 0.001" solref="0.004 1"/>
+      <geom name="sg_mid_right" type="box" pos="0.050 -0.05856 0.0285"
+            size="0.008 0.0136 0.010" mass="0" group="3" material="sg_pad"
+            friction="1.5 0.02 0.005" solimp="0.98 0.999 0.001" solref="0.004 1"/>
+    </body>
+
+    <body name="sg_jaw_left" pos="0 0 0">
+      <joint name="sg_jaw_left_joint" type="slide" axis="1 0 0" range="0 0.0355"
+             damping="2.0" armature="0.001"/>
+      <geom type="mesh" mesh="sg_jaw_left" material="sg_jaw" mass="0.035"
+            contype="0" conaffinity="0" group="2"/>
+      <geom name="sg_pad_left" type="box" pos="-0.046 -0.10719 0.0285"
+            size="0.004 0.015 0.0025" mass="0" group="3" material="sg_pad"
+            friction="1.5 0.02 0.005" solimp="0.98 0.999 0.001" solref="0.004 1"/>
+      <geom name="sg_mid_left" type="box" pos="-0.050 -0.05856 0.0285"
+            size="0.008 0.0136 0.010" mass="0" group="3" material="sg_pad"
+            friction="1.5 0.02 0.005" solimp="0.98 0.999 0.001" solref="0.004 1"/>
+    </body>
+
+    <!-- Arducam OV9281 optical frame, from the camera holder in the CAD -->
+    <site name="sg_camera" pos="0 0.044 0.028" quat="0.70710678 0.70710678 0 0" size="0.004"/>
+    <site name="sg_tcp"    pos="0 -0.10719 0.0285" size="0.004" rgba="1 0 1 1"/>
+  </body>
+</mujocoinclude>

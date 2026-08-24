@@ -1,0 +1,66 @@
+<mujoco model="so101_slide_gripper">
+  <compiler angle="radian" meshdir="." />
+  <option timestep="0.002" integrator="implicitfast" />
+  <visual>
+    <global offwidth="1600" offheight="1200" />
+    <quality shadowsize="4096" />
+  </visual>
+  <!-- gripper geometry, exported from Fusion -->
+  <include file="gripper_assets.xml" />
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="meshes/arm/base_link.stl" scale="0.001 0.001 0.001" />
+    <mesh name="link1_1" content_type="model/stl" file="meshes/arm/link1_1.stl" scale="0.001 0.001 0.001" />
+    <mesh name="link2_1" content_type="model/stl" file="meshes/arm/link2_1.stl" scale="0.001 0.001 0.001" />
+    <mesh name="link3_1" content_type="model/stl" file="meshes/arm/link3_1.stl" scale="0.001 0.001 0.001" />
+    <mesh name="link4_1" content_type="model/stl" file="meshes/arm/link4_1.stl" scale="0.001 0.001 0.001" />
+    <mesh name="link5_1" content_type="model/stl" file="meshes/arm/link5_1.stl" scale="0.001 0.001 0.001" />
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.25 0.27 0.30" rgb2="0.32 0.34 0.38" width="512" height="512" />
+    <material name="grid" texture="grid" texrepeat="8 8" reflectance="0.1" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.35 0.42 0.52" rgb2="0.05 0.06 0.08" width="256" height="256" />
+  </asset>
+  <worldbody>
+    <light pos="-0.5 -0.3 0.8" dir="0.5 0.3 -0.8" diffuse="0.3 0.3 0.3" />
+    <light pos="0.4 -0.5 1.0" dir="-0.4 0.5 -1.0" directional="true" diffuse="0.7 0.7 0.7" />
+    <geom name="floor" type="plane" size="1 1 0.01" material="grid" />
+    <geom type="mesh" mesh="base_link" />
+    <body name="link1_1" pos="-9.9e-05 -0.007243 0.027983">
+      <inertial pos="-6.74952e-05 -0.0304904 0.0537666" quat="0.741279 0.0624238 -0.0421672 0.666956" mass="0.241847" diaginertia="0.00020148 0.00019497 9.255e-05" />
+      <joint name="base_link_to_link1" pos="0 0 0" axis="0 -0.008727 0.999962" range="-2.0944 2.0944" actuatorfrcrange="-1.5 1.5" damping="0.1" frictionloss="0.05" />
+      <geom pos="9.9e-05 0.007243 -0.027983" type="mesh" mesh="link1_1" />
+      <body name="link2_1" pos="0.020891 -0.031313 0.091377">
+        <inertial pos="-0.0183886 0.0626104 0.00101204" quat="0.487483 0.509946 -0.505248 0.49703" mass="0.986114" diaginertia="0.00163814 0.00133618 0.000430679" />
+        <joint name="link1_to_link2" pos="0 0 0" axis="-0.999962 -0.008726 -7.6e-05" range="-3.22886 0.174533" actuatorfrcrange="-1.5 1.5" damping="0.1" frictionloss="0.05" />
+        <geom pos="-0.020792 0.038556 -0.11936" quat="1 0 0 0" type="mesh" mesh="link2_1" />
+        <body name="link3_1" pos="0.00151 0.112435 0.029417">
+          <inertial pos="-0.0177515 -0.0654403 -0.000172961" quat="0.496869 0.499452 -0.493993 0.509548" mass="0.903115" diaginertia="0.0014402 0.00119426 0.000363546" />
+          <joint name="link2_to_link3" pos="0 0 0" axis="-0.999924 -0.00865 -0.008802" range="0 3.31613" actuatorfrcrange="-1.5 1.5" damping="0.1" frictionloss="0.05" />
+          <geom pos="-0.022302 -0.073879 -0.148777" quat="1 0 0 0" type="mesh" mesh="link3_1" />
+          <body name="link4_1" pos="0.00208 -0.134461 0.00412">
+            <inertial pos="-0.0143886 -0.0288027 -0.000205619" quat="0.220056 0.668013 -0.224508 0.674485" mass="0.317735" diaginertia="0.000239011 0.000171595 0.000119394" />
+            <joint name="link3_to_link4" pos="0 0 0" axis="-0.999848 0.000153 -0.017451" range="-1.65806 1.65806" actuatorfrcrange="-1.5 1.5" damping="0.1" frictionloss="0.05" />
+            <geom pos="-0.024382 0.060582 -0.152897" quat="1 0 0 0" type="mesh" mesh="link4_1" />
+            <body name="link5_1" pos="-0.01732 -0.060045 -0.000831">
+              <inertial pos="0 -0.01 0.005" quat="1 0 0 0" mass="0.08" diaginertia="6e-05 6e-05 4e-05" />
+              <joint name="link4_to_link5" pos="0 0 0" axis="-1e-06 0.999961 0.008803" range="-4.27606 1.5708" actuatorfrcrange="-1.5 1.5" damping="0.1" frictionloss="0.05" />
+              <body name="sg_mount" pos="-0.0014 -0.0477 -0.0002" quat="0.70710678 0.70710678 0 0">
+                <include file="gripper_body.xml" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="base_link_to_link1" joint="base_link_to_link1" kp="12" kv="2.0" forcerange="-1.5 1.5" />
+    <position name="link1_to_link2" joint="link1_to_link2" kp="18" kv="3.0" forcerange="-1.5 1.5" />
+    <position name="link2_to_link3" joint="link2_to_link3" kp="14" kv="2.33" forcerange="-1.5 1.5" />
+    <position name="link3_to_link4" joint="link3_to_link4" kp="8" kv="1.33" forcerange="-1.5 1.5" />
+    <position name="link4_to_link5" joint="link4_to_link5" kp="6" kv="1.0" forcerange="-1.5 1.5" />
+  </actuator>
+  <include file="gripper_actuation.xml" />
+  <contact>
+    <exclude body1="link5_1" body2="slide_gripper_base" />
+    <exclude body1="world" body2="link1_1" />
+  </contact>
+</mujoco>

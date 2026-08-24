@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="so_101">
+
+
+
+
+  <mujoco>
+    <compiler meshdir="meshes/arm" />
+  </mujoco>
+
+
+
+
+
+  <link name="world" />
+  <joint name="world_to_base" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+
+
+
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-7.395983749131527e-05 0.018688778123587116 0.031975817456183726" rpy="0 0 0" />
+      <mass value="0.2092095548721987" />
+      <inertia ixx="0.000199" iyy="0.000196" izz="0.000203" ixy="1e-06" iyz="-1e-05" ixz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link1_1">
+    <inertial>
+      <origin xyz="-6.74951590711253e-05 -0.030490405697529033 0.053766555610065915" rpy="0 0 0" />
+      <mass value="0.24184654503223657" />
+      <inertia ixx="0.000195" iyy="0.000199" izz="9.5e-05" ixy="1e-06" iyz="1.6e-05" ixz="-2e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="9.9e-05 0.007243 -0.027983" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link1_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="9.9e-05 0.007243 -0.027983" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link1_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link2_1">
+    <inertial>
+      <origin xyz="-0.018388577871412994 0.06261038358877268 0.0010120440807449838" rpy="0 0 0" />
+      <mass value="0.98611438366224" />
+      <inertia ixx="0.001336" iyy="0.000432" izz="0.001637" ixy="1.3e-05" iyz="-3.7e-05" ixz="-1e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.020792 0.038556 -0.11936" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link2_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="-0.020792 0.038556 -0.11936" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link2_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link3_1">
+    <inertial>
+      <origin xyz="-0.017751520535904237 -0.06544031690248904 -0.0001729613192295032" rpy="0 0 0" />
+      <mass value="0.9031154796125306" />
+      <inertia ixx="0.001194" iyy="0.000364" izz="0.00144" ixy="1.5e-05" iyz="1.4e-05" ixz="-2e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.022302 -0.073879 -0.148777" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link3_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="-0.022302 -0.073879 -0.148777" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link3_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link4_1">
+    <inertial>
+      <origin xyz="-0.014388616159181473 -0.028802697165152366 -0.00020561897946119734" rpy="0 0 0" />
+      <mass value="0.31773533805976817" />
+      <inertia ixx="0.000138" iyy="0.000153" izz="0.000239" ixy="2.5e-05" iyz="0.0" ixz="-1e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.024382 0.060582 -0.152897" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link4_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="-0.024382 0.060582 -0.152897" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link4_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link5_1">
+    <inertial>
+      <origin xyz="-0.0005839285183169068 -0.04153912948671028 0.01505583353882603" rpy="0 0 0" />
+      <mass value="0.5561721109318601" />
+      <inertia ixx="0.000579" iyy="0.000983" izz="0.000737" ixy="1e-06" iyz="-8.4e-05" ixz="-5e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.007062 0.120627 -0.152066" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link5_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="-0.007062 0.120627 -0.152066" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="arm/link5_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_link_to_link1" type="revolute">
+    <origin xyz="-9.9e-05 -0.007243 0.027983" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link1_1" />
+    <axis xyz="-0.0 -0.008727 0.999962" />
+    <limit lower="-2.094395" upper="2.094395" effort="1.5" velocity="5.236" />
+    <dynamics damping="0.1" friction="0.05" />
+    <safety_controller soft_lower_limit="-2.044" soft_upper_limit="2.044" k_position="100" k_velocity="10" />
+  </joint>
+
+
+  <joint name="link1_to_link2" type="revolute">
+    <origin xyz="0.020891 -0.031313 0.091377" rpy="0 0 0" />
+    <parent link="link1_1" />
+    <child link="link2_1" />
+    <axis xyz="-0.999962 -0.008726 -7.6e-05" />
+    <limit lower="-3.228859" upper="0.174533" effort="1.5" velocity="5.236" />
+    <dynamics damping="0.1" friction="0.05" />
+    <safety_controller soft_lower_limit="-3.179" soft_upper_limit="0.125" k_position="100" k_velocity="10" />
+  </joint>
+
+
+  <joint name="link2_to_link3" type="revolute">
+    <origin xyz="0.00151 0.112435 0.029417" rpy="0 0 0" />
+    <parent link="link2_1" />
+    <child link="link3_1" />
+    <axis xyz="-0.999924 -0.00865 -0.008802" />
+    <limit lower="0.0" upper="3.316126" effort="1.5" velocity="5.236" />
+    <dynamics damping="0.1" friction="0.05" />
+    <safety_controller soft_lower_limit="0.05" soft_upper_limit="3.266" k_position="100" k_velocity="10" />
+  </joint>
+
+
+  <joint name="link3_to_link4" type="revolute">
+    <origin xyz="0.00208 -0.134461 0.00412" rpy="0 0 0" />
+    <parent link="link3_1" />
+    <child link="link4_1" />
+    <axis xyz="-0.999848 0.000153 -0.017451" />
+    <limit lower="-1.658063" upper="1.658063" effort="1.5" velocity="5.236" />
+    <dynamics damping="0.1" friction="0.05" />
+    <safety_controller soft_lower_limit="-1.608" soft_upper_limit="1.608" k_position="100" k_velocity="10" />
+  </joint>
+
+
+  <joint name="link4_to_link5" type="revolute">
+    <origin xyz="-0.01732 -0.060045 -0.000831" rpy="0 0 0" />
+    <parent link="link4_1" />
+    <child link="link5_1" />
+    <axis xyz="-1e-06 0.999961 0.008803" />
+    <limit lower="-4.276057" upper="1.570796" effort="1.5" velocity="5.236" />
+    <dynamics damping="0.1" friction="0.05" />
+    <safety_controller soft_lower_limit="-4.226" soft_upper_limit="1.521" k_position="100" k_velocity="10" />
+  </joint>
+
+
+  </robot>
