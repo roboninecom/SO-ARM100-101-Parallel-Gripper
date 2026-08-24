@@ -4,8 +4,12 @@
   <name>so_arm_101_description</name>
   <version>0.1.0</version>
   <description>ROS2 robot description package for the SO-ARM-101 robotic arm with parallel gripper. Supports multiple simulator backends (Gazebo, MuJoCo, Webots, CoppeliaSim, Isaac Sim) via parameterized ros2_control.</description>
-  <maintainer email="todo@todo.com">author</maintainer>
-  <license>GPL-3.0-only</license>
+  <maintainer email="hello@robonine.com">Robonine</maintainer>
+  <!-- Code and robot description are Apache-2.0; some meshes in meshes/ are
+       Robonine hardware under CERN-OHL-P-2.0 and others are upstream
+       SO-ARM101 geometry under Apache-2.0. See meshes/LICENSE.md. -->
+  <license>Apache-2.0</license>
+  <license>CERN-OHL-P-2.0</license>
 
   <!-- Core dependencies -->
   <depend>xacro</depend>
@@ -35,7 +39,6 @@
   <exec_depend>topic_based_ros2_control</exec_depend>
 
   <!-- Testing -->
-  <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>

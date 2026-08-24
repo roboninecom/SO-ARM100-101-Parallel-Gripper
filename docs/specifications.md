@@ -2,7 +2,7 @@
 
 ## Overview
 
-Lightweight 3D-printed end-effector designed by **Robonine Team** for the open-source teleoperating robotic platform SO ARM 100/101. The mechanism provides reliable parallel jaw motion and sufficient gripping force for a broad range of educational and experimental applications.
+Lightweight 3D-printed end-effector designed by **Robonine** for the open-source teleoperating robotic platform SO ARM 100/101. The mechanism provides reliable parallel jaw motion and sufficient gripping force for a broad range of educational and experimental applications.
 
 ![Follower gripper mounted on SO-ARM100](../assets/images/specification/07-gripper-on-so-arm100.jpg)
 

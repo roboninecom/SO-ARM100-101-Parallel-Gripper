@@ -12,7 +12,8 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name, ['package.xml', 'LICENSE.md']),
+        (os.path.join('share', package_name, 'meshes'), ['meshes/LICENSE.md']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'meshes', 'visual'), glob('meshes/visual/*')),
@@ -22,10 +23,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='author',
-    maintainer_email='todo@todo.com',
+    maintainer='Robonine',
+    maintainer_email='hello@robonine.com',
     description='SO-ARM-101 robot description with multi-simulator support',
-    license='GPL-3.0-only',
+    license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

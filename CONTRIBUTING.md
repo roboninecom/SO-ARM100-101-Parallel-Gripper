@@ -135,7 +135,29 @@ Contributors will be recognized in:
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+This project is multi-licensed — see [`LICENSING.md`](LICENSING.md) for the full map.
+
+By submitting a contribution you certify that you have the right to submit it,
+and you agree that it is licensed under the licence that applies to the part of
+the repository it lands in:
+
+| You are changing | Your contribution is licensed |
+|---|---|
+| Hardware / CAD | CERN-OHL-P-2.0 |
+| Software | Apache-2.0 |
+| Documentation and images | CC BY 4.0 |
+
+In other words, inbound = outbound: whatever licence a file is already under,
+your change to it is under the same licence.
+
+**Third-party material.** If your contribution includes anything you did not
+create yourself, say so in the pull request so it can be recorded in
+[`NOTICE`](NOTICE). Please do not commit binaries you cannot license — that
+includes vendor tools and firmware.
+
+**New files** must be covered by [`REUSE.toml`](REUSE.toml). `reuse lint` runs in
+pre-commit and in CI, and will fail if any file lacks copyright and licence
+information.
 
 ## Questions?
 

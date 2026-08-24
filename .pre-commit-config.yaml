@@ -4,18 +4,27 @@ repos:
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$'
+        # LICENSES/ and NOTICE must stay byte-for-byte verbatim
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: end-of-file-fixer
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$'
+        # LICENSES/ and NOTICE must stay byte-for-byte verbatim
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: mixed-line-ending
         args: ['--fix=lf']
-        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$'
+        # LICENSES/ and NOTICE must stay byte-for-byte verbatim
+        exclude: '\.stl$|\.obj$|\.STL$|\.STEP$|\.step$|^LICENSES/|^NOTICE$|-LICENSE\.txt$'
       - id: check-yaml
       - id: check-xml
       - id: check-added-large-files
         args: ['--maxkb=1024']
       - id: check-merge-conflict
       - id: check-case-conflict
+
+  # Licence compliance: every file must have copyright + licence info
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v6.2.0
+    hooks:
+      - id: reuse
 
   # Python linting
   - repo: https://github.com/pycqa/flake8

@@ -19,9 +19,16 @@ Requirements:
 - Python 3.6+
 - Serial communication interface
 
-Author: Open-Source Parallel Gripper Project
-License: MIT
+Author: Robonine (https://robonine.com)
+License: Apache-2.0
+
+Portions of this file were contributed while it was offered under the MIT
+Licence; those contributions are relicensed here under Apache-2.0 with the
+contributor's agreement. See RELICENSING.md.
 """
+
+# SPDX-FileCopyrightText: Copyright (c) 2025 Robonine
+# SPDX-License-Identifier: Apache-2.0
 
 import logging
 import os

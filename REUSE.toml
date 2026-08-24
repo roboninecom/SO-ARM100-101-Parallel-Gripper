@@ -1,0 +1,173 @@
+# Machine-readable licence map (REUSE Specification 3.3).
+#
+# Most of this repository is binary — STL, STEP, PDF, PNG, JPG, GIF — and cannot
+# carry an SPDX header. This file assigns copyright and licence by path instead.
+#
+# ORDERING MATTERS: the LAST matching [[annotations]] block wins. Blocks are
+# therefore ordered general -> specific. Verify with `reuse spdx` after editing;
+# in particular check the eight meshes under
+# community/histology-slide-gripper/mujoco/meshes/arm/.
+#
+# Human-readable version of the same map: see LICENSING.md.
+#
+# The three licence texts exist twice on purpose: LICENSES/ is where the REUSE
+# Specification requires them, and HARDWARE-LICENSE.txt / SOFTWARE-LICENSE.txt /
+# DOCS-LICENSE.txt at the root are what GitHub's licence detection reads.
+
+version = 1
+SPDX-PackageName = "SO-ARM100/101 Parallel Gripper"
+SPDX-PackageSupplier = "Robonine <https://robonine.com>"
+SPDX-PackageDownloadLocation = "https://github.com/roboninecom/SO-ARM100-101-Parallel-Gripper"
+
+
+# ---------------------------------------------------------------------------
+# 1. Catch-all: documentation, images and anything not matched below.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+
+# ---------------------------------------------------------------------------
+# 2. Community variant: authored by Michael Viacheslavov, not Robonine.
+#    Docs and images default to CC-BY-4.0; code and CAD are narrowed below.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = "community/histology-slide-gripper/**"
+SPDX-FileCopyrightText = "Copyright (c) 2026 Michael Viacheslavov"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+
+# ---------------------------------------------------------------------------
+# 3. Software.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "software/**",
+  "examples/**",
+  ".github/**",
+  ".pre-commit-config.yaml",
+  ".gitignore",
+  "simulation/so_arm_101_description/package.xml",
+  "simulation/so_arm_101_description/setup.py",
+  "simulation/so_arm_101_description/setup.cfg",
+  "simulation/so_arm_101_description/Dockerfile",
+  "simulation/so_arm_101_description/docker-compose.yaml",
+  "simulation/so_arm_101_description/.dockerignore",
+  "simulation/so_arm_101_description/resource/**",
+  "simulation/so_arm_101_description/urdf/**",
+  "simulation/so_arm_101_description/config/**",
+  "simulation/so_arm_101_description/launch/**",
+  "simulation/so_arm_101_description/scripts/**",
+  "simulation/so_arm_101_description/test/**",
+  "simulation/so_arm_101_description/docker/**",
+  "simulation/so_arm_101_description/worlds/**",
+  "simulation/so_arm_101_description/so_arm_101_description/**",
+]
+SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  "community/histology-slide-gripper/mujoco/*.py",
+  "community/histology-slide-gripper/mujoco/*.xml",
+  "community/histology-slide-gripper/mujoco/*.urdf",
+  "community/histology-slide-gripper/mujoco/*.xacro",
+  "community/histology-slide-gripper/mujoco/requirements.txt",
+  "community/histology-slide-gripper/mujoco/.gitignore",
+]
+SPDX-FileCopyrightText = "Copyright (c) 2026 Michael Viacheslavov"
+SPDX-License-Identifier = "Apache-2.0"
+
+
+# ---------------------------------------------------------------------------
+# 4. Hardware: Robonine's own manufacturable design.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = "models/**"
+SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
+SPDX-License-Identifier = "CERN-OHL-P-2.0"
+
+[[annotations]]
+path = "models/README.md"
+SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+
+# ---------------------------------------------------------------------------
+# 5. Hardware: the community variant's own CAD and gripper meshes.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "community/histology-slide-gripper/cad/*.step",
+  "community/histology-slide-gripper/cad/*.stl",
+  "community/histology-slide-gripper/mujoco/meshes/base.stl",
+  "community/histology-slide-gripper/mujoco/meshes/jaw_left.stl",
+  "community/histology-slide-gripper/mujoco/meshes/jaw_right.stl",
+  "community/histology-slide-gripper/mujoco/meshes/pinion.stl",
+]
+SPDX-FileCopyrightText = "Copyright (c) 2026 Michael Viacheslavov"
+SPDX-License-Identifier = "CERN-OHL-P-2.0"
+
+
+# ---------------------------------------------------------------------------
+# 6. Simulation meshes: Robonine's gripper geometry.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "simulation/so_arm_101_description/meshes/visual/clamp_1.stl",
+  "simulation/so_arm_101_description/meshes/visual/clamp_2.stl",
+  "simulation/so_arm_101_description/meshes/collision/clamp_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/clamp_2.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/clamp_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/clamp_2.stl",
+]
+SPDX-FileCopyrightText = "Copyright (c) 2025 Robonine"
+SPDX-License-Identifier = "CERN-OHL-P-2.0"
+
+
+# ---------------------------------------------------------------------------
+# 7. Simulation meshes: upstream SO-ARM101 arm. NOT Robonine's work.
+#    Derived from https://github.com/TheRobotStudio/SO-ARM100 (Apache-2.0).
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "simulation/so_arm_101_description/meshes/visual/base_link.stl",
+  "simulation/so_arm_101_description/meshes/visual/link1_1.stl",
+  "simulation/so_arm_101_description/meshes/visual/link2_1.stl",
+  "simulation/so_arm_101_description/meshes/visual/link3_1.stl",
+  "simulation/so_arm_101_description/meshes/visual/link4_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/base_link.stl",
+  "simulation/so_arm_101_description/meshes/collision/link1_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/link2_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/link3_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/link4_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/base_link.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/link1_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/link2_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/link3_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/link4_1.stl",
+]
+SPDX-FileCopyrightText = "Copyright (c) The Robot Studio and the SO-ARM100 contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+
+# ---------------------------------------------------------------------------
+# 8. link5_1.stl: a single fused body combining the upstream SO-ARM101 wrist
+#    with Robonine's RB9.01.062.010 Main frame. The two contributions are not
+#    separable within the file, so the whole file is Apache-2.0: Robonine
+#    cannot grant CERN-OHL-P-2.0 over geometry it does not own, and is free to
+#    license its own portion under Apache-2.0.
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "simulation/so_arm_101_description/meshes/visual/link5_1.stl",
+  "simulation/so_arm_101_description/meshes/collision/link5_1.stl",
+  "community/histology-slide-gripper/mujoco/meshes/arm/link5_1.stl",
+]
+SPDX-FileCopyrightText = [
+  "Copyright (c) The Robot Studio and the SO-ARM100 contributors",
+  "Copyright (c) 2025 Robonine",
+]
+SPDX-License-Identifier = "Apache-2.0"
