@@ -8,7 +8,9 @@
 
 A lightweight 3D-printed parallel gripper designed by **[Robonine](https://robonine.com)** for the open-source SO-ARM100/101 robotic platform.
 
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
+[![Hardware: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--P--2.0-blue.svg)](LICENSES/CERN-OHL-P-2.0.txt)
+[![Software: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-blue.svg)](LICENSES/Apache-2.0.txt)
+[![Docs: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-blue.svg)](LICENSES/CC-BY-4.0.txt)
 [![Cost: ~$70](https://img.shields.io/badge/Cost-~%2470-green.svg)](docs/bom.md)
 [![Assembly: 30min](https://img.shields.io/badge/Assembly-30%20min-orange.svg)](docs/assembly-guide.md)
 
@@ -191,8 +193,10 @@ https://lab.robonine.com/tools/robonine/control-robot
 │   ├── SO-ARM101 by Robo9.pdf           # SO-ARM101 product specification
 │   └── specifications.md               # Technical specifications
 ├── models/
-│   ├── parts/                              # Individual STL files
-│   └── Follower_Gripper_180x180_BedSize.STL  # Complete assembly (180×180mm bed)
+│   ├── parts/                                    # Individual STL files
+│   └── Follower gripper (165x165 bed size).STL   # Complete assembly (165×165mm bed)
+├── community/
+│   └── histology-slide-gripper/   # Community variant (CAD, MuJoCo model)
 ├── simulation/
 │   ├── README.md                  # Simulation overview
 │   ├── gazebo/                    # Gazebo guide
@@ -203,7 +207,13 @@ https://lab.robonine.com/tools/robonine/control-robot
 │   └── so_arm_101_description/    # ROS2 package (URDF, launch, Docker)
 ├── software/
 │   └── python/                # Control software
-└── examples/                  # Usage examples
+├── examples/                  # Usage examples
+├── LICENSE                    # Licence map (which licence covers what)
+├── LICENSES/                  # Full licence texts
+├── NOTICE                     # Third-party attribution
+├── REUSE.toml                 # Machine-readable licence map
+├── RELICENSING.md             # Record of the 2026 relicensing
+└── CONTRIBUTING.md
 ```
 
 ---
@@ -307,7 +317,26 @@ We welcome contributions! Please feel free to:
 
 ## 📄 License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+Copyright (c) 2025 Robonine. This project is multi-licensed — different kinds of
+material carry different licences:
+
+| Material | Licence |
+|---|---|
+| Hardware designs — `models/`, community CAD, gripper meshes | [CERN-OHL-P-2.0](LICENSES/CERN-OHL-P-2.0.txt) |
+| Software — `software/`, `examples/`, `simulation/`, simulation code in `community/` | [Apache-2.0](LICENSES/Apache-2.0.txt) |
+| Documentation and images — `docs/`, `assets/`, all `README.md` | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
+
+See [`LICENSE`](LICENSE) for the exact file-by-file map and
+[`REUSE.toml`](REUSE.toml) for the machine-readable version.
+
+**Not everything here is Robonine's work.** The SO-ARM101 arm meshes are derived
+from [TheRobotStudio's upstream project](https://github.com/TheRobotStudio/SO-ARM100)
+and remain Apache-2.0; the histology slide gripper was contributed by
+[@histochemichael](https://github.com/histochemichael). See [`NOTICE`](NOTICE)
+before reusing any mesh.
+
+Releases up to and including `v0.3.1` were published under GPL-3.0 and remain
+available under those terms — see [`RELICENSING.md`](RELICENSING.md).
 
 ---
 

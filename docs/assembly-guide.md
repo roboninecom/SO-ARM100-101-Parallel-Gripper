@@ -36,7 +36,16 @@ This guide provides step-by-step instructions for assembling the parallel grippe
 
 **Instructions for Windows users:**
 1. Connect Servo to Serial Bus Servo Board, connect Board to PC by USB.
-2. Run FD.exe from [`software/python/`](../software/).
+2. Configure the servo with Feetech's **FD** (SCServo Debug) tool. It is closed-source
+   Windows software from Feetech and is **not** redistributed in this repository:
+   - Official download: <https://www.feetechrc.com/software.html> — look for the FD /
+     SCServo Debug archive. Some downloads there are password-protected; request the
+     password from Feetech.
+   - Open-source cross-platform alternative:
+     <https://github.com/Kotakku/FT_SCServo_Debug_Qt>
+
+   The steps below describe the FD interface; the alternative exposes the same
+   parameters under similar names.
 3. Choose your COM port, select BaudRate 1 000 000, push buttons "Open" and after "Search".
 4. Below from the list select your servo.
 5. Check the box to enable torque on servo.
